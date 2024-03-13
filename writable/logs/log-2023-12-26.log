@@ -1,0 +1,8 @@
+CRITICAL - 2023-12-26 15:52:44 --> syntax error, unexpected variable "$routes", expecting ")"
+in APPPATH/Config/Routes.php on line 26.
+ 1 SYSTEMPATH/CLI/Console.php(39): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 ROOTPATH/spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-26 17:52:45 --> syntax error, unexpected variable "$routes", expecting ")"
+in APPPATH/Config/Routes.php on line 26.
+ 1 SYSTEMPATH/CLI/Console.php(39): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 ROOTPATH/spark(102): CodeIgniter\CLI\Console->run()

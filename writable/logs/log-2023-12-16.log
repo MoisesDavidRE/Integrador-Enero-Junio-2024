@@ -1,0 +1,101 @@
+CRITICAL - 2023-12-16 18:17:44 --> syntax error, unexpected identifier "CarreraModel"
+in APPPATH\Controllers\Admin\CarreraController.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\en desarrollo\\asesoriasitst24\\app\\Controllers\\Admin\\CarreraController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\CarreraController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\CarreraController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\CarreraController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\en desarrollo\\asesoriasitst24\\public\\index.php')
+CRITICAL - 2023-12-16 18:18:05 --> syntax error, unexpected identifier "CarreraModel"
+in APPPATH\Controllers\Admin\CarreraController.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\en desarrollo\\asesoriasitst24\\app\\Controllers\\Admin\\CarreraController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\CarreraController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\CarreraController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\CarreraController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\en desarrollo\\asesoriasitst24\\public\\index.php')
+CRITICAL - 2023-12-16 18:18:45 --> syntax error, unexpected identifier "CarreraModel"
+in APPPATH\Controllers\Admin\CarreraController.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\en desarrollo\\asesoriasitst24\\app\\Controllers\\Admin\\CarreraController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\CarreraController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\CarreraController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\CarreraController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\en desarrollo\\asesoriasitst24\\public\\index.php')
+CRITICAL - 2023-12-16 18:19:56 --> syntax error, unexpected identifier "CarreraModel"
+in APPPATH\Controllers\Admin\CarreraController.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\en desarrollo\\asesoriasitst24\\app\\Controllers\\Admin\\CarreraController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\CarreraController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\CarreraController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\CarreraController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\en desarrollo\\asesoriasitst24\\public\\index.php')
+CRITICAL - 2023-12-16 18:20:23 --> syntax error, unexpected identifier "CarreraModel"
+in APPPATH\Controllers\Admin\CarreraController.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\en desarrollo\\asesoriasitst24\\app\\Controllers\\Admin\\CarreraController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\CarreraController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\CarreraController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\CarreraController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\en desarrollo\\asesoriasitst24\\public\\index.php')
+CRITICAL - 2023-12-16 18:20:38 --> Object of class App\Controllers\Admin\CarreraController could not be converted to string
+in APPPATH\Controllers\Admin\CarreraController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\en desarrollo\\asesoriasitst24\\public\\index.php')
+ERROR - 2023-12-16 18:20:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'useradmin'@'localhost' (using password: YES) in E:\en desarrollo\asesoriasitst24\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 E:\en desarrollo\asesoriasitst24\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'useradmin', Object(SensitiveParameterValue), 'asesoriasitst24', 3306, '', 0)
+#1 E:\en desarrollo\asesoriasitst24\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\en desarrollo\asesoriasitst24\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\en desarrollo\asesoriasitst24\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\en desarrollo\asesoriasitst24\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\en desarrollo\asesoriasitst24\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\en desarrollo\asesoriasitst24\app\Controllers\Admin\CarreraController.php(22): CodeIgniter\BaseModel->findAll()
+#7 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(942): App\Controllers\Admin\CarreraController->index()
+#8 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CarreraController))
+#9 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\en desarrollo\asesoriasitst24\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\en desarrollo\asesoriasitst24\system\Commands\Server\rewrite.php(47): require_once('E:\\en desarroll...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in E:\en desarrollo\asesoriasitst24\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\en desarrollo\asesoriasitst24\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\en desarrollo\asesoriasitst24\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\en desarrollo\asesoriasitst24\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\en desarrollo\asesoriasitst24\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\en desarrollo\asesoriasitst24\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\en desarrollo\asesoriasitst24\app\Controllers\Admin\CarreraController.php(22): CodeIgniter\BaseModel->findAll()
+#6 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(942): App\Controllers\Admin\CarreraController->index()
+#7 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CarreraController))
+#8 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\en desarrollo\asesoriasitst24\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\en desarrollo\asesoriasitst24\system\Commands\Server\rewrite.php(47): require_once('E:\\en desarroll...')
+#11 {main}
+CRITICAL - 2023-12-16 18:20:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carreras`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Admin\CarreraController.php(22): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CarreraController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CarreraController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\en desarrollo\\asesoriasitst24\\public\\index.php')

@@ -1,0 +1,39 @@
+WARNING - 2023-12-22 14:52:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$asignatura is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/degante/DATA/devs/asesoriasitst24/public/index.php')
+INFO - 2023-12-22 14:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-22 14:52:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/degante/DATA/devs/asesoriasitst24/public/index.php')
+WARNING - 2023-12-22 14:52:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$asignatura is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/degante/DATA/devs/asesoriasitst24/public/index.php')
+INFO - 2023-12-22 14:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-22 14:52:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/degante/DATA/devs/asesoriasitst24/public/index.php')
+WARNING - 2023-12-22 14:55:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$asignatura is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/degante/DATA/devs/asesoriasitst24/public/index.php')
+INFO - 2023-12-22 14:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-22 14:55:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/degante/DATA/devs/asesoriasitst24/public/index.php')

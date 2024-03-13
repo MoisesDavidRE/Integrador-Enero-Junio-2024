@@ -1,0 +1,66 @@
+CRITICAL - 2023-12-25 07:14:44 --> Call to undefined function set_value()
+in APPPATH\Views\admin\carreras\edit.php on line 11.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/carreras/edit', [], true)
+ 4 APPPATH\Controllers\Admin\CarreraController.php(60): view('admin/carreras/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CarreraController->edit('4')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CarreraController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\en desarrollo\\asesoriasitst24\\public\\index.php')
+ERROR - 2023-12-25 16:38:13 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in E:\en desarrollo\asesoriasitst24\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 E:\en desarrollo\asesoriasitst24\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'useradmin', Object(SensitiveParameterValue), 'asesoriasitst24', 3306, '', 0)
+#1 E:\en desarrollo\asesoriasitst24\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\en desarrollo\asesoriasitst24\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\en desarrollo\asesoriasitst24\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\en desarrollo\asesoriasitst24\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\en desarrollo\asesoriasitst24\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\en desarrollo\asesoriasitst24\app\Controllers\Admin\CarreraController.php(22): CodeIgniter\BaseModel->findAll()
+#7 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(942): App\Controllers\Admin\CarreraController->index()
+#8 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CarreraController))
+#9 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\en desarrollo\asesoriasitst24\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\en desarrollo\asesoriasitst24\system\Commands\Server\rewrite.php(47): require_once('E:\\en desarroll...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in E:\en desarrollo\asesoriasitst24\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\en desarrollo\asesoriasitst24\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\en desarrollo\asesoriasitst24\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\en desarrollo\asesoriasitst24\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\en desarrollo\asesoriasitst24\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\en desarrollo\asesoriasitst24\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\en desarrollo\asesoriasitst24\app\Controllers\Admin\CarreraController.php(22): CodeIgniter\BaseModel->findAll()
+#6 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(942): App\Controllers\Admin\CarreraController->index()
+#7 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CarreraController))
+#8 E:\en desarrollo\asesoriasitst24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\en desarrollo\asesoriasitst24\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\en desarrollo\asesoriasitst24\system\Commands\Server\rewrite.php(47): require_once('E:\\en desarroll...')
+#11 {main}
+CRITICAL - 2023-12-25 16:38:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carreras`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Admin\CarreraController.php(22): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CarreraController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CarreraController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\en desarrollo\\asesoriasitst24\\public\\index.php')
+CRITICAL - 2023-12-25 16:54:26 --> Call to undefined function form_open()
+in APPPATH\Views\admin\carreras\index.php on line 57.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/carreras/index', [], true)
+ 4 APPPATH\Controllers\Admin\CarreraController.php(28): view('admin/carreras/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CarreraController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CarreraController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\en desarrollo\\asesoriasitst24\\public\\index.php')
