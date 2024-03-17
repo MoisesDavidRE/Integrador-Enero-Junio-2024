@@ -80,8 +80,8 @@
                                     </div>
 
                                     <div class="d-grid">
-                                        <button class="btn btn-lg btn-primary btn-login fw-bold mb-2"
-                                            type="submit">Iniciar Sesión</button>
+                                        <button class="btn btn-lg btn-login fw-bold mb-2"
+                                            type="submit" style="background-color: rgb(0, 92, 171); color: white; font-weight: bolder;">Iniciar Sesión</button>
                                     </div>
                                 </form>
 

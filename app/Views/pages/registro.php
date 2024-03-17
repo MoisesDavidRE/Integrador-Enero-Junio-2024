@@ -54,7 +54,6 @@
                         <div class="row">
                             <div class="col-md-9 col-lg-8 mx-auto">
                                 <h3 class="login-heading mb-4" style="color:rgb(0,92,171)">Registrarse</h3>
-
                                 <!-- Register Form -->
                                 <form action="<?= base_url('registro') ?>" method="post">
                                     <div class="form-floating mb-3">
@@ -65,8 +64,14 @@
 
                                     <div class="form-floating mb-3">
                                         <input type="email" class="form-control" id="floatingPassword"
-                                            placeholder="Email" name="correo" required>
+                                            placeholder="Email" name="email" required>
                                         <label for="floatingPassword">Correo</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingPassword"
+                                            placeholder="Teléfono" name="telefono" required>
+                                        <label for="floatingPassword">Telefono</label>
                                     </div>
 
                                     <div class="form-floating mb-3">
@@ -75,23 +80,13 @@
                                         <label for="floatingPassword">Contraseña</label>
                                     </div>
 
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingPassword"
-                                            placeholder="Teléfono" name="telefono" required>
-                                        <label for="floatingPassword">Telefono</label>
-                                    </div>
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-primary btn-login fw-bold mb-2"
                                             type="submit">Guardar</button>
                                         <a class="btn btn-secondary" href="<?php echo base_url('/'); ?>">Cancelar</a>
                                     </div>
-                                    
+
                                 </form>
-
-                                <div class="mt-3" style="display:flex; align-items:center; justify-content: center;">
-                                    <a href="<?php echo base_url('registro'); ?>">Registrarse</a>
-                                </div>
-
                             </div>
                         </div>
                     </div>
