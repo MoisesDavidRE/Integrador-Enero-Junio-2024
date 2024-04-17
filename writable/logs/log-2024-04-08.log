@@ -1,0 +1,59 @@
+INFO - 2024-04-08 16:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-08 16:06:52 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'upnCursos', 3306, '', 0)
+#1 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\app\Validation\Userrules.php(11): CodeIgniter\BaseModel->first()
+#7 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Validation\Validation.php(311): App\Validation\Userrules->validateUser('123456789', 'identificador,p...', Array, NULL, 'password')
+#8 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('password', 'password', '123456789', Array, Array)
+#9 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#10 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\app\Controllers\UserController.php(28): CodeIgniter\Controller->validate(Array, Array)
+#11 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\UserController->login()
+#12 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#13 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#15 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\app\Validation\Userrules.php(11): CodeIgniter\BaseModel->first()
+#6 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Validation\Validation.php(311): App\Validation\Userrules->validateUser('123456789', 'identificador,p...', Array, NULL, 'password')
+#7 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('password', 'password', '123456789', Array, Array)
+#8 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#9 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\app\Controllers\UserController.php(28): CodeIgniter\Controller->validate(Array, Array)
+#10 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\UserController->login()
+#11 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#12 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\Moisés David\Desktop\SEXTO SEMESTRE\Proyecto Integrador\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#15 {main}
+CRITICAL - 2024-04-08 16:06:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `identificador` = :identificador:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Validation\Userrules.php(11): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\Validation\Validation.php(311): App\Validation\Userrules->validateUser('123456789', 'identificador,password', [...], null, 'password')
+ 7 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('password', 'password', '123456789', [...], [...])
+ 8 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\UserController.php(28): CodeIgniter\Controller->validate([...], [...])
+10 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserController->login()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\public\\index.php')

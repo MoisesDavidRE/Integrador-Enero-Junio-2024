@@ -10,7 +10,6 @@ class UserController extends BaseController
 
     public function login()
     {
-        $data = [];
 
         if ($this->request->getMethod() == 'post') {
 
@@ -26,20 +25,26 @@ class UserController extends BaseController
             ];
 
             if (!$this->validate($rules, $errors)) {
-
                 return view('login', [
                     "validation" => $this->validator,
                 ]);
-
             } else {
                 $model = new UsuarioModel();
 
                 $user = $model->where('identificador', $this->request->getVar('identificador'))->first();
-
                 $this->setUserSession($user);
 
                 if(($user['perfil'] == 1) && ($user['status'] == 1)) {
-                    return redirect()->to(base_url('admin'));
+                    return redirect()->to(base_url('admin/cursos'));
+                }
+                if(($user['perfil'] == 2) && ($user['status'] == 1)) {
+                    return redirect()->to(base_url('admin/cursos'));
+                }
+                if(($user['perfil'] == 3) && ($user['status'] == 1)) {
+                    return redirect()->to(base_url('admin/cursos'));
+                }
+                if(($user['perfil'] == 4) && ($user['status'] == 1)) {
+                    return redirect()->to(base_url('admin/cursos'));
                 }
             }
         }
@@ -72,5 +77,4 @@ class UserController extends BaseController
         return redirect()->to('login');
     }
 }
-
 

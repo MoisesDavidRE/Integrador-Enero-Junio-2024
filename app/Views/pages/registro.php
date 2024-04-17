@@ -79,13 +79,11 @@
                                             placeholder="Password" name="password" required>
                                         <label for="floatingPassword">Contraseña</label>
                                     </div>
-
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-primary btn-login fw-bold mb-2"
                                             type="submit">Guardar</button>
                                         <a class="btn btn-secondary" href="<?php echo base_url('/'); ?>">Cancelar</a>
                                     </div>
-
                                 </form>
                             </div>
                         </div>

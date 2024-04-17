@@ -27,14 +27,23 @@ class UsuarioController extends ResourceController
             'usuarios' => $usuarios,
         ];
 
-        return view('admin/usuarios/index', $data);
+        return view('admin/usuarios/alumnos', $data);
     }
-
-
-    public function show($id = null)
+    
+    public function administrativos()
     {
-        //
+        return view('admin/usuarios/administrativos');
     }
+
+    public function docentes()
+    {
+        return view('admin/usuarios/docentes');
+    }
+    public function admins()
+    {
+        return view('admin/usuarios/admins');
+    }
+
 
 
 

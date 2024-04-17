@@ -13,7 +13,6 @@ class Userrules
         if (!$user) {
             return false;
         }
-
         return password_verify($data['password'], $user['password']);
     }
 }
