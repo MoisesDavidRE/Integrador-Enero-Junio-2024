@@ -63,7 +63,7 @@ class UserController extends BaseController
             'nombre'        => $infoUser['nombre'],
             'apaterno'      => $infoUser['apellidoPaterno'],
             'amaterno'      => $infoUser['apellidoMaterno'],
-            // 'username'      => $user['username'],
+            'telefono'      => $infoUser['telefono'],
             'email'         => $user['email'],
             'isLoggedIn'    => true,
             'perfil'           => $user['perfil'],
