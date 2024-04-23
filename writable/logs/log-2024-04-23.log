@@ -1,0 +1,62 @@
+INFO - 2024-04-23 00:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 00:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 00:21:17 --> Undefined array key "nombre"
+in APPPATH\Controllers\UserController.php on line 60.
+ 1 APPPATH\Controllers\UserController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\app\\Controllers\\UserController.php', 60)
+ 2 APPPATH\Controllers\UserController.php(35): App\Controllers\UserController->setUserSession([...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-04-23 00:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 00:24:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UserController.php on line 63.
+ 1 APPPATH\Controllers\UserController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\app\\Controllers\\UserController.php', 63)
+ 2 APPPATH\Controllers\UserController.php(38): App\Controllers\UserController->setUserSession([...], null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-04-23 00:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 00:31:43 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UserController.php on line 63.
+ 1 APPPATH\Controllers\UserController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\app\\Controllers\\UserController.php', 63)
+ 2 APPPATH\Controllers\UserController.php(38): App\Controllers\UserController->setUserSession([...], null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-04-23 00:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 00:31:47 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UserController.php on line 63.
+ 1 APPPATH\Controllers\UserController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\app\\Controllers\\UserController.php', 63)
+ 2 APPPATH\Controllers\UserController.php(38): App\Controllers\UserController->setUserSession([...], null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-04-23 00:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 00:32:01 --> Attempt to read property "id" on array
+in APPPATH\Controllers\UserController.php on line 37.
+ 1 APPPATH\Controllers\UserController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\app\\Controllers\\UserController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-04-23 00:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-23 00:32:22 --> Undefined array key "apaterno"
+in APPPATH\Controllers\UserController.php on line 64.
+ 1 APPPATH\Controllers\UserController.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "apaterno"', 'C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\app\\Controllers\\UserController.php', 64)
+ 2 APPPATH\Controllers\UserController.php(38): App\Controllers\UserController->setUserSession([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\SEXTO SEMESTRE\\Proyecto Integrador\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-04-23 00:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-23 00:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

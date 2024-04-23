@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UsuarioModel extends Model
+class InfoUsuarioModel extends Model
 {
-    protected $table            = 'usuarios';
+    protected $table            = 'infousuario';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = ['perfil', 'identificador', 'email', 'password','status'];
+    protected $allowedFields    = ['id_usuario','nombre','apellidoPaterno','apellidoMaterno','telefono' ];
 
     // Dates
     protected $useTimestamps = false;

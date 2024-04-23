@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\UsuarioModel;
+use App\Models\InfoUsuarioModel;
 
 class UserController extends BaseController
 {
@@ -29,10 +30,12 @@ class UserController extends BaseController
                     "validation" => $this->validator,
                 ]);
             } else {
-                $model = new UsuarioModel();
+                $usuario = new UsuarioModel();
+                $infoUsuario = new InfoUsuarioModel();
 
-                $user = $model->where('identificador', $this->request->getVar('identificador'))->first();
-                $this->setUserSession($user);
+                $user = $usuario->where('identificador', $this->request->getVar('identificador'))->first();
+                $infoUser = $infoUsuario->where('id_usuario', $user['id'])->first();
+                $this->setUserSession($user, $infoUser);
 
                 if(($user['perfil'] == 1) && ($user['status'] == 1)) {
                     return redirect()->to(base_url('admin/cursos'));
@@ -52,19 +55,18 @@ class UserController extends BaseController
     }
 
 
-    private function setUserSession($user)
+    private function setUserSession($user, $infoUser)
     {
         $data = [
             'id'            => $user['id'],
             'identificador' => $user['identificador'],
-            'nombre'        => $user['nombre'],
-            'apaterno'      => $user['apaterno'],
-            'amaterno'      => $user['amaterno'],
+            'nombre'        => $infoUser['nombre'],
+            'apaterno'      => $infoUser['apellidoPaterno'],
+            'amaterno'      => $infoUser['apellidoMaterno'],
             // 'username'      => $user['username'],
             'email'         => $user['email'],
             'isLoggedIn'    => true,
             'perfil'           => $user['perfil'],
-            'sexo'          => $user['sexo'],
         ];
 
         session()->set($data);

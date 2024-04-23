@@ -68,6 +68,7 @@
 
                                 <!-- Sign In Form -->
                                 <form action="<?= base_url('login'); ?>" method="post">
+                                      
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" id="floatingInput"
                                             placeholder="name@example.com" name="identificador" required>
