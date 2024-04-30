@@ -10,6 +10,8 @@ $routes->post('registro', 'RegistroController::create');
 
 $routes->match(['get', 'post'], 'login', 'UserController::login', ["filter" => "noauth"]);
 
+
+
 // Rutas para el administrador
 $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 
@@ -54,20 +56,53 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 	// ------------------------------------------------------------------------------------------------
 });
 
+
+// Rutas para el docente
 $routes->group('docente', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'Docente\DocenteController::index');
 	$routes->resource('cursos', ['controller' => 'Docente\CursosController::index']);
+
+	// CURSOS------------------------------------------------------------------------------------------------
+	$routes->resource('cursos', ['controller' => 'Docente\CursosController::index']);
+
+	// MIS CURSOS------------------------------------------------------------------------------------------------
+	$routes->resource('misCursos', ['controller' => 'Docente\MisCursosController::index']);
+
+	// PERFIL------------------------------------------------------------------------------------------------
+	$routes->resource('perfil', ['controller' => 'Docente\PerfilController::index']);
 });
 
 
+
+// Rutas para el estudiante
 $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'Estudiante\EstudianteController::index');
 	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::index']);
+
+	// CURSOS------------------------------------------------------------------------------------------------
+	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::index']);
+
+	// MIS CURSOS------------------------------------------------------------------------------------------------
+	$routes->resource('misCursos', ['controller' => 'Estudiante\MisCursosController::index']);
+
+	// PERFIL------------------------------------------------------------------------------------------------
+	$routes->resource('perfil', ['controller' => 'Estudiante\PerfilController::index']);
 });
 
+
+// Rutas para el perfil de administrativo/servicios generales
 $routes->group('administrativo', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'AdministrativoSG\AdministrativoSGController::index');
 	$routes->resource('cursos', ['controller' => 'AdministrativoSG\AdministrativoSGController::index']);
+
+	// CURSOS------------------------------------------------------------------------------------------------
+	$routes->resource('cursos', ['controller' => 'AdministrativoSG\CursosController::index']);
+
+	// MIS CURSOS------------------------------------------------------------------------------------------------
+	$routes->resource('misCursos', ['controller' => 'AdministrativoSG\MisCursosController::index']);
+
+	// PERFIL------------------------------------------------------------------------------------------------
+	$routes->resource('perfil', ['controller' => 'AdministrativoSG\PerfilController::index']);
 });
 
 $routes->get('logout', 'UserController::logout');
@@ -76,6 +111,3 @@ $routes->get('logout', 'UserController::logout');
 // 2-estudiante
 // 3-docente
 // 4-administrativo/SG
-
-
-// INICIO, PERFIL Y MIS CURSOS

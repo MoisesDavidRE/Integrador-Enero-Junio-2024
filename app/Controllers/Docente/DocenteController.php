@@ -15,4 +15,15 @@ class DocenteController extends BaseController
         }
         return view('docente/dashboard');
     }
+
+    public function cursos(){
+        return view('administrativoSG/cursos/index');
+    }
+
+    public function misCursos(){
+        return view('administrativoSG/misCursos/index');
+    }
+    public function perfil(){
+        return view('administrativoSG/perfil/index');
+    }
 }

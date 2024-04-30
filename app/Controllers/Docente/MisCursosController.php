@@ -3,9 +3,8 @@
 namespace App\Controllers\Docente;
 
 use App\Controllers\BaseController;
-use CodeIgniter\RESTful\ResourceController;
 
-class CursosController extends BaseController
+class MisCursosController extends BaseController
 {
     public function index()
     {
@@ -14,7 +13,6 @@ class CursosController extends BaseController
             $session->destroy();
             return redirect('/');
         }
-        
-        return view('docente/cursos/index');
+        return view ('docente/misCursos/index');
     }
 }

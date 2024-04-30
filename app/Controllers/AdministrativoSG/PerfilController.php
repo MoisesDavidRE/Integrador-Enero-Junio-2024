@@ -4,7 +4,7 @@ namespace App\Controllers\AdministrativoSG;
 
 use App\Controllers\BaseController;
 
-class CursosController extends BaseController
+class PerfilController extends BaseController
 {
     public function index()
     {
@@ -13,6 +13,6 @@ class CursosController extends BaseController
             $session->destroy();
             return redirect('/');
         }
-        return view ('administrativoSG/cursos/index');
+        return view ('administrativoSG/perfil/index');
     }
 }

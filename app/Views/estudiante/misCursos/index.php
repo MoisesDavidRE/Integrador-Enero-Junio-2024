@@ -1,4 +1,4 @@
 <?= $this->extend('template/mainEstudiante'); ?>
 <?= $this->section('content'); ?>
-<h1>PERFIL ESTUDIANTE INICIO</h1>
+<h1>MIS CURSOS - ESTUDIANTE</h1>
 <?= $this->endSection(); ?>
