@@ -7,17 +7,14 @@ use App\Models\UsuarioModel;
 
 class AdminController extends BaseController
 {
-    public function __construct()
-    {
-        if (session()->get('perfil') != 1) {
-            echo view('accesonoautorizado');
-            exit;
-        }
-    }
-
     public function index()
     {
-        $usuarioModel = new UsuarioModel();
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
+        $usuarioModel = model ('UsuarioModel');
         $usuarios = $usuarioModel->orderBy('id', 'DESC')->findAll();
 
         $data = [

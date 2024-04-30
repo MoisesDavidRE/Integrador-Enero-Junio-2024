@@ -6,13 +6,12 @@ use App\Models\UsuarioModel;
 class Userrules
 {
     public function validateUser(string $str, string $fields, array $data) {
-        $model = new UsuarioModel();
-        
+        $model = model('UsuarioModel');
         $user = $model->where('identificador', $data['identificador'])->first();
         
         if (!$user) {
             return false;
         }
-        return password_verify($data['password'], $user['password']);
+        return password_verify($data['password'], $user->password);
     }
 }

@@ -30,24 +30,24 @@ class UserController extends BaseController
                     "validation" => $this->validator,
                 ]);
             } else {
-                $usuario = new UsuarioModel();
-                $infoUsuario = new InfoUsuarioModel();
+                $usuario = model ('UsuarioModel');
+                $infoUsuario = model ('InfoModel');
 
                 $user = $usuario->where('identificador', $this->request->getVar('identificador'))->first();
-                $infoUser = $infoUsuario->where('id_usuario', $user['id'])->first();
+                $infoUser = $infoUsuario->where('id_usuario', $user->id)->first();
                 $this->setUserSession($user, $infoUser);
 
-                if(($user['perfil'] == 1) && ($user['status'] == 1)) {
+                if(($user->perfil == 1) && ($user->status == 1)) {
                     return redirect()->to(base_url('admin/cursos'));
                 }
-                if(($user['perfil'] == 2) && ($user['status'] == 1)) {
-                    return redirect()->to(base_url('admin/cursos'));
+                if(($user->perfil == 2) && ($user->status == 1)) {
+                    return redirect()->to(base_url('estudiante/cursos'));
                 }
-                if(($user['perfil'] == 3) && ($user['status'] == 1)) {
-                    return redirect()->to(base_url('admin/cursos'));
+                if(($user->perfil == 3) && ($user->status == 1)) {
+                    return redirect()->to(base_url('docente/cursos'));
                 }
-                if(($user['perfil'] == 4) && ($user['status'] == 1)) {
-                    return redirect()->to(base_url('admin/cursos'));
+                if(($user->perfil == 4) && ($user->status == 1)) {
+                    return redirect()->to(base_url('administrativo/cursos'));
                 }
             }
         }
@@ -58,16 +58,16 @@ class UserController extends BaseController
     private function setUserSession($user, $infoUser)
     {
         $data = [
-            'id'            => $user['id'],
-            'identificador' => $user['identificador'],
-            'nombre'        => $infoUser['nombre'],
-            'apaterno'      => $infoUser['apellidoPaterno'],
-            'amaterno'      => $infoUser['apellidoMaterno'],
-            'telefono'      => $infoUser['telefono'],
-            'email'         => $user['email'],
-            'sede'          => $infoUser['sede'],
+            'id'            => $user->id,
+            'identificador' => $user->identificador,
+            'nombre'        => $infoUser->nombre,
+            'apaterno'      => $infoUser->apellidoPaterno,
+            'amaterno'      => $infoUser->apellidoMaterno,
+            'telefono'      => $infoUser->telefono,
+            'email'         => $user->email,
+            'sede'          => $infoUser->sede,
             'isLoggedIn'    => true,
-            'perfil'           => $user['perfil'],
+            'perfil'           => $user->perfil,
         ];
 
         session()->set($data);
