@@ -1,79 +1,74 @@
 <?= $this->extend('template/main'); ?>
 <?= $this->section('content'); ?>
 <style>
-    .button-container {
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-agregar {
         display: flex;
-        justify-content: center;
+        justify-content: right; 
+        margin-bottom: 20px; 
+        margin-right: 80px; 
     }
 
-    .button-agregar {
-        display: flex;
-        justify-content: right;
-        margin-bottom: 20px;
-        margin-right: 160px;
-    }
-    .buscar {
-        display: flex;
-        justify-content: right;
-        margin-bottom: 20px;
-    }
+  .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: auto;
+    width: 60%;
+}
 
-    .search-form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-        margin-left: 200px;
-        margin-right: auto;
-        width: 60%;
-    }
+.search-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    margin-right: 10px;
+}
 
-    .search-input {
-        flex-grow: 1;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        color: #333;
-        margin-right: 10px;
-    }
-
-    .search-button {
-        padding: 8px 12px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        background-color: #3498db;
-        color: #fff;
-        cursor: pointer;
-    }
+.search-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
 </style>
 
 <div class="button-container">
-    <a href="<?= base_url('admin/usuarios/alumnos') ?>">
-        <button class="btn btn-outline-primary">Alumnos</button>
-    </a>
-    <span style="width:30px"></span>
+<a href="<?= base_url('admin/usuarios/alumnos') ?>">
+  <button class="btn btn-outline-primary">Alumnos</button>
+</a>
+  <span style="width:30px"></span>
     <button class="btn btn-outline-primary" disabled>Personal</button>
 </div>
 
 <h1>Lista del personal</h1>
 
-    <form action="tu_url_de_busqueda" method="GET" class="search-form">
-        
-        <input type="text" name="q" placeholder="Buscar..." class="search-input">
-        <button type="submit" class="search-button">Buscar</button>
-    </form>
+<form action="tu_url_de_busqueda" method="GET" class="search-form">
+    <input type="text" name="q" placeholder="Buscar..." class="search-input">
+    <button type="submit" class="search-button">Buscar</button>
+</form>
+
 
 <div class="button-agregar">
-    <a href="<?= base_url('admin/usuarios/agregarPersonal') ?>">
-        <button class="btn btn-light">+ Agregar</button>
-    </a>
+  <a href="<?= base_url('admin/usuarios/agregarPersonal') ?>">
+    <button class="btn btn-outline-primary">Agregar<i class="fa-duotone fa-plus"></i></button>
+  </a>
 </div>
 
-<style>
-    h1 {
+    <style>
+        h1 {
         color: #333;
         margin-top: 40px;
-        text-align: center;
+        text-align: center; 
     }
 
     table {
@@ -85,11 +80,9 @@
         font-size: 15px;
     }
 
-    th,
-    td {
+    th, td {
         border: 1px solid #ccc;
-        padding: 8px 12px;
-        /* Añadido para mejorar la apariencia */
+        padding: 8px 12px; /* Añadido para mejorar la apariencia */
     }
 
     th {
@@ -105,7 +98,9 @@
         color: red;
         cursor: pointer;
     }
-</style>
+
+
+    </style>
 
 <table>
     <thead>
@@ -124,8 +119,8 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($usuarios as $usuario): ?>
-            <?php foreach ($informacion[$usuario->id] as $info): ?>
+        <?php foreach($usuarios as $usuario): ?>
+            <?php foreach($informacion[$usuario->id] as $info): ?>
                 <tr>
                     <td><?= $usuario->perfil ?></td>
                     <td><?= $usuario->identificador ?></td>
@@ -137,19 +132,19 @@
                     <td><?= $usuario->email ?></td>
                     <td><?= $usuario->status ?></td>
                     <td><?= $usuario->created_at ?></td>
-                    <td>
-                        <div class="btn-group" role="group" aria-label="Botones de acción">
+                    <td>    
+                    <div class="btn-group" role="group" aria-label="Botones de acción">
                             <a href="<?= base_url('admin/usuarios/mostrarPersonal/' . $usuario->id) ?>" class="btn btn-primary">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
-                            <button type="button" class="btn btn-danger" onclick="confirmarEliminar(<?= $usuario->id ?>)">
-                                <i class="fa-solid fa-trash"></i>
+                    <button type="button" class="btn btn-danger" onclick="confirmarEliminar(<?= $usuario->id ?>)">
+                                <i class="fa-solid fa-trash"></i> 
                             </button>
 
-                            <a href="<?= base_url('admin/usuarios/editarPersonal/' . $usuario->id) ?>" class="btn btn-warning">
-                                <i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i>
-                            </a>
+                            <a href="<?= base_url('admin/usuarios/editarPersonal/' . $usuario->id) ?>" class="btn btn-success">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                            </a> 
                         </div>
                     </td>
                 </tr>
@@ -167,19 +162,20 @@
                     'Content-Type': 'application/json',
                 }
             })
-                .then(response => {
-                    if (response.ok) {
-                        window.location.reload();
-                    } else {
-                        alert('Hubo un error al eliminar el usuario.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error al eliminar el usuario:', error);
+            .then(response => {
+                if (response.ok) {
+                    window.location.reload();
+                } else {
                     alert('Hubo un error al eliminar el usuario.');
-                });
+                }
+            })
+            .catch(error => {
+                console.error('Error al eliminar el usuario:', error);
+                alert('Hubo un error al eliminar el usuario.');
+            });
         }
     }
 </script>
 
 <?= $this->endSection(); ?>
+
