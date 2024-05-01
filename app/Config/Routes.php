@@ -107,6 +107,23 @@ $routes->group('administrativo', ['filter' => 'auth'], function ($routes) {
 
 $routes->get('logout', 'UserController::logout');
 
+//rutas liz
+	$routes->resource('usuarios/mostrar', ['controller' => 'Admin\UsuarioController::mostrar']);
+	$routes->get('usuarios/agregar', 'Admin\UsuarioController::agregar');
+	$routes->post('usuarios/agregar', 'Admin\UsuarioController::agregar');
+	$routes->post('usuarios/eliminar/(:num)', 'Admin\UsuarioController::eliminar/$1'); 
+	$routes->post('usuarios/eliminarPersonal/(:num)', 'Admin\UsuarioController::eliminarPersonal/$1'); 
+	$routes->resource('usuarios/editarPersonal', ['controller' => 'Admin\UsuarioController::editarPersonal']);
+	$routes->resource('usuarios/mostrarPersonal', ['controller' => 'Admin\UsuarioController::mostrarPersonal']);
+	$routes->resource('usuarios/agregarPersonal', ['controller' => 'Admin\UsuarioController::agregarPersonal']);
+	$routes->post('usuarios/insert', 'Admin\UsuarioController::insert');
+	$routes->post('usuarios/insertPersonal', 'Admin\UsuarioController::insertPersonal');
+	$routes->get('usuarios/buscar', ['controller' => 'Admin\UsuarioController::buscar']);
+	$routes->get('usuarios/editar/(:num)', 'Admin\UsuarioController::editar/$1');
+	$routes->post('usuarios/actualizar/(:num)', 'Admin\UsuarioController::actualizar/$1');
+	$routes->get('usuarios/editarPersonal/(:num)', 'Admin\UsuarioController::editarPersonal/$1');
+	$routes->post('usuarios/actualizarPersonal/(:num)', 'Admin\UsuarioController::actualizarPersonal/$1');
+
 // 1-admin
 // 2-estudiante
 // 3-docente
