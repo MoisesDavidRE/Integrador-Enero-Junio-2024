@@ -12,10 +12,10 @@ class InfoModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id_Usuario', 'nombre', 'apellidoPaterno', 'apellidoMaterno','telefono','sede'];
+    protected $allowedFields    = ['id_Usuario', 'nombre', 'apellidoPaterno', 'apellidoMaterno', 'telefono', 'sede'];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
