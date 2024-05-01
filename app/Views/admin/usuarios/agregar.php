@@ -56,10 +56,11 @@
 </style>
 
 <h1>Agregar alumno</h1>
-<form action="<?= base_url('admin/usuarios/alumnos') ?>" method="get">
-    <button type="submit" class="btn btn-danger">Cancelar</button>
+<form action="<?php echo base_url('admin/usuarios/alumnos'); ?>" method="get">
+    <button class="btn btn-primary" type="submit"><i class="fas fa-arrow-left"></i></button>
 </form>
-<form action="<?= base_url('admin/usuarios/insert') ?>" method="POST">
+
+<form id="alumnosForm" action="<?= base_url('admin/usuarios/insert') ?>" method="POST">
     <div class="form-container">
     <div class="form-group">
                 <label for="perfil">Perfil:</label>
@@ -90,8 +91,8 @@
             <select id="sede" name="sede" required>
                 <option value="Teziutlán">Teziutlán</option>
                 <option value="Hueyapan">Hueyapan</option>
-                <option value="Hueyapan">Teteles</option>
-                <option value="Hueyapan">Tlatlauquitepec</option>
+                <option value="Teteles">Teteles</option>
+                <option value="Tlatlauquitepec">Tlatlauquitepec</option>
             </select>
         </div>
         <div class="form-group">
@@ -119,4 +120,10 @@
 
     </div>
 </form>
+<script>
+document.getElementById('alumnosForm').addEventListener('submit', function() {
+    alert('Los datos se actualizaron correctamente.');
+});
+</script>
 <?= $this->endSection(); ?>
+
