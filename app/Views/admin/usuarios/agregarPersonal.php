@@ -56,10 +56,10 @@
 </style>
 
 <h1>Agregar personal</h1>
-<form action="<?= base_url('admin/usuarios/personal') ?>" method="get">
-    <button type="submit" class="btn btn-danger">Cancelar</button>
+<form action="<?php echo base_url('admin/usuarios/personal'); ?>" method="get">
+    <button class="btn btn-primary" type="submit"><i class="fas fa-arrow-left"></i></button>
 </form>
-<form action="<?= base_url('admin/usuarios/insertPersonal') ?>" method="POST">
+<form id="personalForm" action="<?= base_url('admin/usuarios/insertPersonal') ?>" method="POST">
     <div class="form-container">
     <div class="form-group">
             <label for="perfil">Perfil:</label>
@@ -94,6 +94,8 @@
             <select id="sede" name="sede" required>
                 <option value="Teziutlán">Teziutlán</option>
                 <option value="Hueyapan">Hueyapan</option>
+                <option value="Teteles">Teteles</option>
+                <option value="Tlatlauquitepec">Tlatlauquitepec</option>
             </select>
         </div>
         <div class="form-group">
@@ -117,8 +119,11 @@
                 <button class="btn btn-outline-primary">Enviar</button>
             </a>
         </div>
-       
-
     </div>
 </form>
+<script>
+document.getElementById('personalForm').addEventListener('submit', function() {
+    alert('Los datos se actualizaron correctamente.');
+});
+</script>
 <?= $this->endSection(); ?>
