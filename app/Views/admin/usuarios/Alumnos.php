@@ -13,9 +13,9 @@
 
     .button-agregar {
         display: flex;
-        justify-content: right;
-        margin-bottom: 20px;
-        margin-right: 80px;
+        justify-content: right; 
+        margin-bottom: 20px; 
+        margin-right: 80px; 
     }
 
     .search-form {
@@ -49,7 +49,7 @@
     h1 {
         color: #333;
         margin-top: 40px;
-        text-align: center;
+        text-align: center; 
     }
 
     table {
@@ -61,8 +61,7 @@
         font-size: 15px;
     }
 
-    th,
-    td {
+    th, td {
         border: 1px solid #ccc;
         padding: 8px 12px;
     }
@@ -80,6 +79,7 @@
         color: red;
         cursor: pointer;
     }
+
 </style>
 
 <div class="button-container">
@@ -89,9 +89,10 @@
         <button class="btn btn-outline-primary">Personal</button>
     </a>
 </div>
-<h1>Usuarios</h1>
 
-<form action="tu_url_de_busqueda" method="GET" class="search-form">
+<h1>Lista de alumnos</h1>
+
+<form action="<?= base_url('admin/usuarios/buscar') ?>" method="GET" class="search-form">
     <input type="text" name="q" placeholder="Buscar..." class="search-input">
     <button type="submit" class="search-button">Buscar</button>
 </form>
@@ -119,8 +120,8 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($usuarios as $usuario): ?>
-            <?php foreach ($informacion[$usuario->id] as $info): ?>
+        <?php foreach($usuarios as $usuario): ?>
+            <?php foreach($informacion[$usuario->id] as $info): ?>
                 <tr>
                     <td><?= $usuario->perfil ?></td>
                     <td><?= $usuario->identificador ?></td>
@@ -130,22 +131,23 @@
                     <td><?= isset($info->telefono) ? $info->telefono : '' ?></td>
                     <td><?= isset($info->sede) ? $info->sede : '' ?></td>
                     <td><?= $usuario->email ?></td>
-                    <td><?= $usuario->status ?></td>
+                    <td><?= $usuario->status ?></td>    
                     <td><?= $usuario->created_at ?></td>
-                    <td>
+                    <td>    
                         <div class="btn-group" role="group" aria-label="Botones de acción">
                             <a href="<?= base_url('admin/usuarios/mostrar/' . $usuario->id) ?>" class="btn btn-primary">
                                 <i class="fa-solid fa-eye"></i>
                             </a>
 
                             <button type="button" class="btn btn-danger" onclick="confirmarEliminar(<?= $usuario->id ?>)">
-                                <i class="fa-solid fa-trash"></i>
+                                <i class="fa-solid fa-trash"></i> 
                             </button>
 
-                            <a href="<?= base_url('admin/usuarios/editar/' . $usuario->id) ?>" class="btn btn-warning">
-                                <i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i>
+                            <a href="<?= base_url('admin/usuarios/editar/' . $usuario->id) ?>" class="btn btn-success">
+                            <i class="fa-solid fa-pen-to-square"></i>
                             </a>
-                            </a>
+                                </a>
+
                             </a>
                         </div>
                     </td>
@@ -164,17 +166,17 @@
                     'Content-Type': 'application/json',
                 }
             })
-                .then(response => {
-                    if (response.ok) {
-                        window.location.reload();
-                    } else {
-                        alert('Hubo un error al eliminar el usuario.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error al eliminar el usuario:', error);
+            .then(response => {
+                if (response.ok) {
+                    window.location.reload();
+                } else {
                     alert('Hubo un error al eliminar el usuario.');
-                });
+                }
+            })
+            .catch(error => {
+                console.error('Error al eliminar el usuario:', error);
+                alert('Hubo un error al eliminar el usuario.');
+            });
         }
     }
 </script>
