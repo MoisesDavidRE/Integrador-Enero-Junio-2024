@@ -14,7 +14,7 @@ class RegistroController extends BaseController
 
     public function __construct()
     {
-        $this->usuarioModel = new UsuarioModel();
+        $this->usuarioModel = model('UsuarioModel');
     }
 
 
