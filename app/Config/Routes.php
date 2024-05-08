@@ -56,22 +56,27 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 	// ------------------------------------------------------------------------------------------------
 });
 
-
-// Rutas para el docente
-$routes->group('docente', ['filter' => 'auth'], function ($routes) {
-	$routes->get('/', 'Docente\DocenteController::index');
-	$routes->resource('cursos', ['controller' => 'Docente\CursosController::index']);
+// Rutas para el estudiante
+$routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
+	$routes->get('/', 'Estudiante\EstudianteController::index');
+	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::index']);
 
 	// CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('cursos', ['controller' => 'Docente\CursosController::index']);
+	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::index']);
 
 	// MIS CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('misCursos', ['controller' => 'Docente\MisCursosController::index']);
+	$routes->get('misCursos', 'Estudiante\MisCursosController::index');
+	$routes->get('misCursos/subtema1', 'Estudiante\MisCursosController::subtema1');
+	$routes->get('misCursos/subtema2', 'Estudiante\MisCursosController::subtema2');
+	$routes->get('misCursos/subtema3', 'Estudiante\MisCursosController::subtema3');
+	$routes->get('misCursos/subtema4', 'Estudiante\MisCursosController::subtema4');
+	$routes->get('misCursos/evaluacion', 'Estudiante\MisCursosController::evaluacion');
+
+	
 
 	// PERFIL------------------------------------------------------------------------------------------------
-	$routes->resource('perfil', ['controller' => 'Docente\PerfilController::index']);
+	$routes->resource('perfil', ['controller' => 'Estudiante\PerfilController::index']);
 });
-
 
 
 // Rutas para el estudiante
