@@ -42,7 +42,15 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 	$routes->resource('usuarios/personal', ['controller' => 'Admin\UsuarioController::personal']);
 
 	// CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('cursos', ['controller' => 'Admin\CursosController::index']);
+	$routes->resource('cursos', ['controller' => 'Admin\CursosController::cursosInicio']);
+	$routes->get('cursos', ['controller' => 'Admin\CursosController::agregar']); // cursos
+	$routes->post('cursos', ['controller' => 'Admin\CursosController::agregar']); // cursos
+
+	$routes->get('cursos', ['controller' => 'Admin\CursosController::editar/$1']); // cursos
+	$routes->get('cursos', ['controller' => 'Admin\CursosController::delete/$1']); // cursos
+
+	$routes->post('cursos', ['controller' => 'Admin\CursosController::insert']); // cursos
+	$routes->post('cursos', ['controller' => 'Admin\CursosController::update']); // cursos
 
 	// PERFIL------------------------------------------------------------------------------------------------
 	$routes->resource('perfil', ['controller' => 'Admin\PerfilController::index']);
@@ -56,6 +64,8 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 	// ------------------------------------------------------------------------------------------------
 });
 
+$routes->post('user/guardarInfo', 'UserController::guardarInfo');
+$routes->get('user/completarInfo', 'UserController::completarInfo');
 // Rutas para el estudiante
 $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'Estudiante\EstudianteController::index');

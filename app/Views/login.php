@@ -57,7 +57,8 @@
                 <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Logo_Upn_Oficial.svg" alt="Logo_Upn_Oficial" width="200px" height="200px"> -->
                 <img src="https://campus-virtual.upn212teziutlan.edu.mx/pluginfile.php/398/mod_label/intro/Fotodelauni.jpg"
                     alt="UPN #212" width='750px' height='550px'>
-                    <img src="https://upn113leon.edu.mx/wp-content/uploads/2022/08/UPN-png.png" alt="Logo_Upn_Oficial" width="157px" height="139px" style="margin-left:-180px;margin-top:-380px">
+                <img src="https://upn113leon.edu.mx/wp-content/uploads/2022/08/UPN-png.png" alt="Logo_Upn_Oficial"
+                    width="157px" height="139px" style="margin-left:-180px;margin-top:-380px">
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="login d-flex align-items-center py-5">
@@ -66,9 +67,12 @@
                             <div class="col-md-9 col-lg-8 mx-auto">
                                 <h3 class="login-heading mb-4" style="color:rgb(0,92,171)">Iniciar Sesión</h3>
 
-                                <!-- Sign In Form -->
+                                <?php if (isset($mensaje)) {
+                                    echo $mensaje;
+                                } ?>
+                            
                                 <form action="<?= base_url('login'); ?>" method="post">
-                                      
+
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" id="floatingInput"
                                             placeholder="name@example.com" name="identificador" required>
@@ -81,12 +85,13 @@
                                     </div>
 
                                     <div class="d-grid">
-                                        <button class="btn btn-lg btn-login fw-bold mb-2"
-                                            type="submit" style="background-color: rgb(0, 92, 171); color: white; font-weight: bolder;">Iniciar Sesión</button>
+                                        <button class="btn btn-lg btn-login fw-bold mb-2" type="submit"
+                                            style="background-color: rgb(0, 92, 171); color: white; font-weight: bolder;">Iniciar
+                                            Sesión</button>
                                     </div>
                                 </form>
 
-                                <div class="mt-3"style="display:flex; align-items:center; justify-content: center;">
+                                <div class="mt-3" style="display:flex; align-items:center; justify-content: center;">
                                     <a href="<?php echo base_url('registro'); ?>">Registrarse</a>
                                 </div>
 

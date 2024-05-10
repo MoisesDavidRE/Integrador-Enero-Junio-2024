@@ -4,18 +4,18 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class InfoModel extends Model
+class CursosInicioModel extends Model
 {
-    protected $table            = 'infousuario';
-    protected $primaryKey       = 'id';
+    protected $table            = 'curso';
+    protected $primaryKey       = 'idCurso';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = false;
-    protected $allowedFields    = ['id_Usuario', 'nombre', 'apellidoPaterno', 'apellidoMaterno', 'telefono', 'sede'];
+    protected $useSoftDeletes   = true;
+    protected $protectFields    = true;
+    protected $allowedFields    = ['instructor','nombre','descripcion','duracion','fechaInicio','fechaFin','objetivo','estatus','visibilidad' ];
 
     // Dates
-    protected $useTimestamps = true;
+    protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
