@@ -71,7 +71,7 @@
         <h1>Detalles del usuario</h1>
         <form action="<?= base_url('admin/perfil/actualizar')?>" method="POST">
         <?= csrf_field() ?>
-        <input type="text" class="form-control"value="<?= session('id')?>" name="idUsuario">
+        <input type="hidden" class="form-control"value="<?= session('id')?>" name="idUsuario">
             <div class="form-group">
                 <label for="identificador">Matrícula:</label>
                 <input class="form-control" type="text" id="identificador" name="identificador"

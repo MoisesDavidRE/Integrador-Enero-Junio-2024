@@ -68,7 +68,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 });
 
 $routes->post('user/guardarInfo', 'UserController::guardarInfo');
-$routes->get('user/completarInfo', 'UserController::completarInfo');
+$routes->get('user/completarInfo/(:num)', 'UserController::completarInfo/$1');
 // Rutas para el estudiante
 $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'Estudiante\EstudianteController::index');

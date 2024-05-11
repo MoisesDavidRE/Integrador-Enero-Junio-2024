@@ -5,7 +5,7 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use TCPDF;
 
-require ('TCPDF/tcpdf.php');
+require ('TCPDF/TCPDF/tcpdf.php');
 class ReportesController extends BaseController
 {
     protected $usuario;

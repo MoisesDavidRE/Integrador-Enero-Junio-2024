@@ -3,7 +3,6 @@
     display: flex;
     align-items: left;
   }
-
 </Style>
 
 
@@ -12,7 +11,7 @@
 
 <h1 align="center">Inicio</h1>
 
-<div class="col-12">
+<div class="col-10" style="position:relative;left:128px">
   <div class="card text-center">
     <form class="d-flex" role="Buscador">
       <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
@@ -21,8 +20,8 @@
   </div>
 </div>
 
-<div style="padding-bottom: 25px; padding-top: 10px;">
-  <button href="<?= base_url('admin/cursos/agregar') ?>" type="button" class="btn btn-light" style="padding: 10px;"><i
+<div style="padding-bottom: 25px; padding-top: 10px;position:relative;left:128px">
+  <button href="<?= base_url('admin/cursos/agregar') ?>" type="button" class="btn btn-outline-primary" style="padding: 10px;"><i
       class="fa-sharp fa-solid fa-plus"></i>Agregar</button>
 </div>
 
@@ -32,7 +31,7 @@
     <div class="row">
 
     <?php foreach ($cursos as $curso): ?>
-      <div class="card" style="width: 20rem;">
+      <div class="card" style="width: 20rem;position:relative;margin-right: 10px;">
         <center> <img
             src="https://static.vecteezy.com/system/resources/previews/005/449/876/non_2x/mathematics-doodle-hand-drawn-school-set-vector.jpg"
             width="300"><br></center>

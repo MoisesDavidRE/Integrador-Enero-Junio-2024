@@ -39,7 +39,7 @@ class UserController extends BaseController
     
                     $infoUser = $infoUsuario->where('id_usuario', $user->id)->first();            
                 if (!$infoUser) {
-                    return redirect()->to('user/completarInfo')->with('id', $user->id);
+                    return redirect()->to('user/completarInfo/'.$user->id)->with('id', $user->id);
                 }                
     
                 $this->setUserSession($user, $infoUser);
@@ -60,22 +60,21 @@ class UserController extends BaseController
         }
         return view('login');
     }
-    public function completarInfo()
+    public function completarInfo($id)
     {
-        $userId = session('id');
     
         $infoUsuario = model('InfoModel');
-        $infoUser = $infoUsuario->where('id_usuario', $userId)->first();
+        $infoUser = $infoUsuario->where('id_usuario', $id)->first();
     
         if ($infoUser) {
             return redirect()->to('admin/cursos');
         }
     
         $usuario = model('UsuarioModel');
-        $basicUserInfo = $usuario->where('id', $userId)->first();
+        $basicUserInfo = $usuario->where('id', $id)->first();
     
         return view('admin/usuarios/completarInfo', [
-            'id' => $userId,
+            'id' => $id,
             'basicUserInfo' => $basicUserInfo,
         ]);
     }
