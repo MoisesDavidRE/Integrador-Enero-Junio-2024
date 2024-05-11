@@ -63,9 +63,6 @@ class UserController extends BaseController
     public function completarInfo()
     {
         $userId = session('id');
-        if (!$userId) {
-            return redirect()->to('login');
-        }
     
         $infoUsuario = model('InfoModel');
         $infoUser = $infoUsuario->where('id_usuario', $userId)->first();
@@ -85,17 +82,13 @@ class UserController extends BaseController
 
     public function guardarInfo()
 {
-    $userId = session('id');
-    if (!$userId) {
-        return redirect()->to('login');
-    }
 
     $validationRules = [
-        // 'nombre' => 'required|min_length[2]|max_length[50]',
-        // 'apellidoPaterno' => 'required|min_length[2]|max_length[50]',
-        // 'apellidoMaterno' => 'required|min_length[2]|max_length[50]',
-        // 'telefono' => 'required|min_length[7]|max_length[15]',
-        // 'sede' => 'required',
+        'nombre' => 'required|min_length[2]|max_length[50]',
+        'apellidoPaterno' => 'required|min_length[2]|max_length[50]',
+        'apellidoMaterno' => 'required|min_length[2]|max_length[50]',
+        'telefono' => 'required|min_length[7]|max_length[15]',
+        'sede' => 'required',
     ];
 
     if (!$this->validate($validationRules)) {
@@ -104,25 +97,30 @@ class UserController extends BaseController
 
     $infoUsuario = model('InfoModel');
     $data = [
-        // 'id_Usuario' => $this->request->getPost('id_Usuario'),
-        // 'nombre' => $this->request->getPost('nombre'),
-        // 'apellidoPaterno' => $this->request->getPost('apellidoPaterno'),
-        // 'apellidoMaterno' => $this->request->getPost('apellidoMaterno'),
-        // 'telefono' => $this->request->getPost('telefono'),
-        // 'sede' => $this->request->getPost('sede'),
+        'id_Usuario' => $this->request->getPost('id_Usuario'),
+        'nombre' => $this->request->getPost('nombre'),
+        'apellidoPaterno' => $this->request->getPost('apellidoPaterno'),
+        'apellidoMaterno' => $this->request->getPost('apellidoMaterno'),
+        'telefono' => $this->request->getPost('telefono'),
+        'sede' => $this->request->getPost('sede')
+    ];
+    $infoUsuario->insert($data);
+    return redirect()->to('login');
+}
 
-        'id_Usuario' =>3,
+public function prueba(){
+    $infoUsuario = model('InfoModel');
+    $data = [
+        'id_Usuario' => 3,
         'nombre' => 'moiii',
         'apellidoPaterno' => 'ramon',
         'apellidoMaterno' => 'estebann',
-        'telefono' => '2312323722',
+        'telefono' => '231232372',
         'sede' => 'Teziutlán',
     ];
     $infoUsuario->insert($data);
-    $mensaje = "Tus datos se han ingresado con éxito, por favor inicia sesión de nuevo";
-    return redirect()->to('login', $mensaje);
+    return redirect()->to('login');
 }
-
     
     private function setUserSession($user, $infoUser)
     {

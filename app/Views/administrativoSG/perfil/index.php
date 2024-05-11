@@ -59,7 +59,7 @@
   </style>
 </head>
 <body>
-<h3><span><?= isset($userInfo['nombre']) ? $userInfo['nombre'] : 'No disponible' ?></span></h3>
+<h3><span><?= isset($userInfo['nombre']).isset($userInfo['apellidoPaterno']).isset($userInfo['apellidoMaterno']) ? $userInfo['nombre'] : 'No disponible' ?></span></h3>
 <div class="tabla">
     <h1>Detalles del usuario</h1>
 

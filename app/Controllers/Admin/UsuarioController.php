@@ -102,7 +102,8 @@ class UsuarioController extends ResourceController
 
         $data = [
             'usuario' => $usuario,
-            'infoUsuario' => $infoUsuario
+            'infoUsuario' => $infoUsuario,
+            'id' => $id
         ];
 
         return view('admin/usuarios/editar', $data);

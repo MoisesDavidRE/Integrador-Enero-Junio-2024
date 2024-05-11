@@ -2,6 +2,7 @@
 <?= $this->section('content'); ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
       float: left;
       margin-left: 100px;
     }
+
     .edit-button {
       background-color: #3498db;
       border: none;
@@ -29,18 +31,21 @@
       margin-top: 35px;
       border-radius: 5px;
       cursor: pointer;
-      margin-left: 80px;      
+      margin-left: 80px;
     }
-    h1{
+
+    h1 {
       text-align: center;
       font-size: 15px;
     }
-    h3{
+
+    h3 {
       text-align: center;
       margin-top: 50px;
       font-weight: bold;
     }
-    .cursos{
+
+    .cursos {
       border: 1px solid #ccc;
       padding: 10px;
       border-radius: 5px;
@@ -49,18 +54,19 @@
       float: left;
       margin-left: 280px;
     }
-    p{
+
+    p {
       color: black;
       font-size: 16px;
-      font-weight: bold;   
+      font-weight: bold;
       margin-top: 16px;
     }
-    
   </style>
 </head>
+
 <body>
-<h3><span><?= isset($userInfo['nombre']) ? $userInfo['nombre'] : 'No disponible' ?></span></h3>
-<div class="tabla">
+  <h3><span><?= $userInfo['nombre'] . " " . $userInfo['apellidoPaterno'] . " " . $userInfo['apellidoMaterno'] ?></span></h3>
+  <div class="tabla">
     <h1>Detalles del usuario</h1>
 
     <div class="user-info">
@@ -76,8 +82,10 @@
       <p>Instituto:</p>
       <span><?= isset($userInfo['sede']) ? $userInfo['sede'] : 'No disponible' ?></span>
     </div>
-  
-    <button class="edit-button">Editar información</button>
+
+    <a href="<?= base_url('admin/perfil/editar/'). session('id') ?>">
+      <button class="edit-button">Editar información</button>
+    </a>
   </div>
   <div class="cursos">
     <h1>Mis cursos</h1>
@@ -88,6 +96,7 @@
     </ul>
   </div>
 </body>
+
 </html>
 
 <?= $this->endSection(); ?>

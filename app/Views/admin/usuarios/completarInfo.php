@@ -11,6 +11,7 @@
             <div class="col-md-9 col-lg-8 mx-auto">
                 <h3 class="login-heading mb-4">Completar Información</h3>
                 <form action="<?= base_url('/user/guardarInfo') ?>" method="POST">
+                <?= csrf_field() ?>
                 <input type="hidden" value="<?= $basicUserInfo->id ?>" name="id_Usuario">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="identificador" name="identificador" value="<?= $basicUserInfo->identificador ?>" required>

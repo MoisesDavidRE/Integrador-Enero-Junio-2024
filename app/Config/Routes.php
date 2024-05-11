@@ -53,7 +53,10 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 	$routes->post('cursos', ['controller' => 'Admin\CursosController::update']); // cursos
 
 	// PERFIL------------------------------------------------------------------------------------------------
-	$routes->resource('perfil', ['controller' => 'Admin\PerfilController::index']);
+	$routes->get('perfil', 'Admin\PerfilController::index');
+	$routes->get('perfil/editar/(:num)', 'Admin\PerfilController::editar/$1');
+	$routes->post('perfil/actualizar', 'Admin\PerfilController::actualizar');
+
 
 	// REPORTES------------------------------------------------------------------------------------------------
 	$routes->resource('reportes/alumnos', ['controller' => 'Admin\ReportesController::index']);

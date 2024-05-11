@@ -16,7 +16,6 @@ class CursosController extends BaseController
 
     public function agregar()
     {
-        $data['title'] = "Agregar Curso";
         $validation =  \Config\Services::validation();
         if (strtolower($this->request->getMethod()) === 'get') {
             return view('template/main')

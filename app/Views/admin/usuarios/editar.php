@@ -53,6 +53,16 @@
     </form>
     <div class="form-container">
         <form id="alumnosForm" action="<?= base_url('admin/usuarios/actualizar/' . $usuario->id) ?>" method="POST">
+        
+        <div class="form-group">
+            <label for="perfil">Perfil:</label>
+            <select id="perfil" name="perfil" required>
+                    <option value="1" <?php if($usuario->perfil == 1){echo 'selected';}?>>Administrador</option>
+                    <option value="2"<?php if($usuario->perfil == 2){echo 'selected';}?>>Estudiante</option>
+                    <option value="3"<?php if($usuario->perfil == 3){echo 'selected';}?>>Docente</option>
+                    <option value="4"<?php if($usuario->perfil == 4){echo 'selected';}?>>Administrativo/Servicios generales</option>
+            </select>
+        </div>
         <div class="form-group">
             <label for="identificador">Matrícula:</label>
             <input type="text" id="identificador" name="identificador" value="<?= isset($usuario->identificador) ? $usuario->identificador : '' ?>" required>
@@ -99,9 +109,9 @@
         </form>
     </div>
 </body>
-<script>
+<!-- <script>
 document.getElementById('alumnosForm').addEventListener('submit', function() {
     alert('Los datos se actualizaron correctamente.');
 });
-</script>
+</script> -->
 <?= $this->endSection(); ?>
