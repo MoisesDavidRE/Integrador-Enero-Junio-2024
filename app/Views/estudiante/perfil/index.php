@@ -90,4 +90,8 @@
   </div>
 </body>
 </html>
+<<<<<<< HEAD
 <?= $this->endSection(); ?>
+=======
+<?= $this->endSection(); ?>
+>>>>>>> e1325212a8b2240aa6f2a4e708d571fc05f216ab

@@ -13,6 +13,17 @@ class PerfilController extends BaseController
             $session->destroy();
             return redirect('/');
         }
-        return view('docente/perfil/index');
+
+        $userInfo = [
+            'nombre' => $session->get('nombre'),
+            'email' => $session->get('email'),
+            'identificador' => $session->get('identificador'),
+            'sede' => $session->get('sede')
+        ];
+
+        $data = [
+            'userInfo' => $userInfo
+        ];
+        return view('docente/perfil/index',$data);
     }
 }
