@@ -27,9 +27,9 @@
     <div class="wrapper">
         <aside id="sidebar" class="js-sidebar">
             <!-- Content For Sidebar -->
-
             <div class="pb-2 mb-2 border-bottom border-white">
-                <!-- <img src="https://upn113leon.edu.mx/wp-content/uploads/2022/08/UPN-png.png" alt="Logo_Upn_Oficial" width="50px" height="50px" style="margin-left:-180px;margin-top:-380px"> -->
+                <center><img src="https://upn113leon.edu.mx/wp-content/uploads/2022/08/UPN-png.png" alt="Logo_Upn_Oficial" width="110px" height="100px"></center>
+                    <!-- <img src="https://upn113leon.edu.mx/wp-content/uploads/2022/08/UPN-png.png" alt="Logo_Upn_Oficial" width="50px" height="50px" style="margin-left:-180px;margin-top:-380px"> -->
             </div>
             <div class="h-100">
                 <div class="sidebar-logo">
