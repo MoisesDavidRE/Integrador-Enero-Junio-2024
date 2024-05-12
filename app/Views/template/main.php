@@ -47,7 +47,7 @@
                 </div>
                 <ul class="sidebar-nav">
                     <li class="sidebar-header">
-                        Principal
+                    
                     </li>
                     <li class="sidebar-item">
                         <a href="<?= base_url('admin/cursos') ?>" class="sidebar-link">
