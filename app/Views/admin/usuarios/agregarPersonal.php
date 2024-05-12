@@ -104,7 +104,7 @@
         </div>
         <div class="form-group">
         <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" value="password" required>
+            <input type="password" id="password" name="password" value="password" required readonly>
         </div>
         <div class="form-group">
             <label for="status">Status:</label>
