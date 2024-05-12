@@ -1,0 +1,130 @@
+INFO - 2024-05-12 00:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-12 00:00:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-12 00:00:01 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-12 00:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-12 00:00:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-12 00:00:02 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-12 00:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-12 00:00:13 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-12 00:00:13 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-12 00:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-12 00:00:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-12 00:00:16 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-12 00:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 00:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 00:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 00:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 00:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 00:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 01:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 01:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 01:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 01:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 01:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 01:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 01:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-12 01:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

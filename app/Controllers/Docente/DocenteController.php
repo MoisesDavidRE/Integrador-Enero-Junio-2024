@@ -13,11 +13,11 @@ class DocenteController extends BaseController
             $session->destroy();
             return redirect('/');
         }
-        return view('docente/dashboard');
+        return view('docente/cursos/index');
     }
 
     public function cursos(){
-        return view('administrativoSG/cursos/index');
+        
     }
 
     public function misCursos(){

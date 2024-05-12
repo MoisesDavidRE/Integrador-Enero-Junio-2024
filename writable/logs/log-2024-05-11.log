@@ -1810,3 +1810,1397 @@ WARNING - 2024-05-11 16:07:39 --> [DEPRECATED] Creation of dynamic property App\
 INFO - 2024-05-11 16:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-11 16:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-11 16:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 16:25:22 --> Invalid file: "admin/cursos/agregar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/cursos/agregar.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 3 APPPATH\Controllers\Admin\CursosController.php(14): view('admin/cursos/agregar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->cursosInicio('agregar')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 16:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 16:26:56 --> CodeIgniter\Router\RouteCollection::resource(): Argument #2 ($options) must be of type ?array, string given, called in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Config\Routes.php on line 46
+in SYSTEMPATH\Router\RouteCollection.php on line 828.
+ 1 APPPATH\Config\Routes.php(46): CodeIgniter\Router\RouteCollection->resource('cursos/agregar', 'Admin\\CursosController::agregar')
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(16): CodeIgniter\Router\RouteCollection->group('admin', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 16:26:56 --> CodeIgniter\Router\RouteCollection::resource(): Argument #2 ($options) must be of type ?array, string given, called in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Config\Routes.php on line 46
+in SYSTEMPATH\Router\RouteCollection.php on line 828.
+ 1 APPPATH\Config\Routes.php(46): CodeIgniter\Router\RouteCollection->resource('cursos/agregar', 'Admin\\CursosController::agregar')
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(16): CodeIgniter\Router\RouteCollection->group('admin', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 16:26:56 --> CodeIgniter\Router\RouteCollection::resource(): Argument #2 ($options) must be of type ?array, string given, called in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Config\Routes.php on line 46
+in SYSTEMPATH\Router\RouteCollection.php on line 828.
+ 1 APPPATH\Config\Routes.php(46): CodeIgniter\Router\RouteCollection->resource('cursos/agregar', 'Admin\\CursosController::agregar')
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(16): CodeIgniter\Router\RouteCollection->group('admin', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 16:26:57 --> CodeIgniter\Router\RouteCollection::resource(): Argument #2 ($options) must be of type ?array, string given, called in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Config\Routes.php on line 46
+in SYSTEMPATH\Router\RouteCollection.php on line 828.
+ 1 APPPATH\Config\Routes.php(46): CodeIgniter\Router\RouteCollection->resource('cursos/agregar', 'Admin\\CursosController::agregar')
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(16): CodeIgniter\Router\RouteCollection->group('admin', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 16:26:57 --> CodeIgniter\Router\RouteCollection::resource(): Argument #2 ($options) must be of type ?array, string given, called in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Config\Routes.php on line 46
+in SYSTEMPATH\Router\RouteCollection.php on line 828.
+ 1 APPPATH\Config\Routes.php(46): CodeIgniter\Router\RouteCollection->resource('cursos/agregar', 'Admin\\CursosController::agregar')
+ 2 SYSTEMPATH\Router\RouteCollection.php(777): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(16): CodeIgniter\Router\RouteCollection->group('admin', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 16:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 16:35:52 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/agregar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/agregar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 16:36:04 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/agregar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/agregar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 16:36:05 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/agregar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/agregar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 16:36:26 --> Unclosed '(' does not match ']'
+in APPPATH\Config\Routes.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 16:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 16:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 19:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 19:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 19:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 19:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 19:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 20:57:37 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\cursos\agregar.php on line 30.
+ 1 APPPATH\Views\admin\cursos\agregar.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 20:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 20:57:38 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\cursos\agregar.php on line 30.
+ 1 APPPATH\Views\admin\cursos\agregar.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 20:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 20:58:11 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\cursos\agregar.php on line 30.
+ 1 APPPATH\Views\admin\cursos\agregar.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 20:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 20:58:40 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\cursos\agregar.php on line 30.
+ 1 APPPATH\Views\admin\cursos\agregar.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 20:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 20:58:41 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\cursos\agregar.php on line 30.
+ 1 APPPATH\Views\admin\cursos\agregar.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 20:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 20:58:48 --> Attempt to read property "id" on null
+in APPPATH\Views\admin\cursos\agregar.php on line 30.
+ 1 APPPATH\Views\admin\cursos\agregar.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 20:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 20:59:06 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php on line 21
+in SYSTEMPATH\BaseModel.php on line 607.
+ 1 APPPATH\Controllers\Admin\CursosController.php(21): CodeIgniter\BaseModel->findAll('perfil', 3)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 20:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 20:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 21:05:22 --> mysqli_sql_exception: Table 'upncursos.infousaurio' doesn't exist in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT nombre F...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombre F...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombre F...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Views\admin\cursos\agregar.php(34): CodeIgniter\Database\BaseConnection->query('SELECT nombre F...')
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\View\View.php(228): include('C:\\Users\\Mois\xC3\xA9...')
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/ag...', Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(29): view('admin/cursos/ag...', Array)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 21:05:22 --> Table 'upncursos.infousaurio' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\admin\cursos\agregar.php(34): CodeIgniter\Database\BaseConnection->query('SELECT nombre FROM infoUsaurio WHERE id_Usuraio = 6')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 21:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 21:05:23 --> mysqli_sql_exception: Table 'upncursos.infousaurio' doesn't exist in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT nombre F...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombre F...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombre F...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Views\admin\cursos\agregar.php(34): CodeIgniter\Database\BaseConnection->query('SELECT nombre F...')
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\View\View.php(228): include('C:\\Users\\Mois\xC3\xA9...')
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/ag...', Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(29): view('admin/cursos/ag...', Array)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 21:05:23 --> Table 'upncursos.infousaurio' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\admin\cursos\agregar.php(34): CodeIgniter\Database\BaseConnection->query('SELECT nombre FROM infoUsaurio WHERE id_Usuraio = 6')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 21:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 21:05:43 --> mysqli_sql_exception: Unknown column 'id_Usuraio' in 'where clause' in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT nombre F...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombre F...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombre F...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Views\admin\cursos\agregar.php(34): CodeIgniter\Database\BaseConnection->query('SELECT nombre F...')
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\View\View.php(228): include('C:\\Users\\Mois\xC3\xA9...')
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/ag...', Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(29): view('admin/cursos/ag...', Array)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 21:05:43 --> Unknown column 'id_Usuraio' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\admin\cursos\agregar.php(34): CodeIgniter\Database\BaseConnection->query('SELECT nombre FROM infoUsuario WHERE id_Usuraio = 6')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 21:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 21:05:44 --> mysqli_sql_exception: Unknown column 'id_Usuraio' in 'where clause' in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT nombre F...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nombre F...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nombre F...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Views\admin\cursos\agregar.php(34): CodeIgniter\Database\BaseConnection->query('SELECT nombre F...')
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\View\View.php(228): include('C:\\Users\\Mois\xC3\xA9...')
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/ag...', Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(29): view('admin/cursos/ag...', Array)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 21:05:44 --> Unknown column 'id_Usuraio' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Views\admin\cursos\agregar.php(34): CodeIgniter\Database\BaseConnection->query('SELECT nombre FROM infoUsuario WHERE id_Usuraio = 6')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 21:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 21:05:56 --> Undefined array key 0
+in APPPATH\Views\admin\cursos\agregar.php on line 35.
+ 1 APPPATH\Views\admin\cursos\agregar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 21:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 21:05:57 --> Undefined array key 0
+in APPPATH\Views\admin\cursos\agregar.php on line 35.
+ 1 APPPATH\Views\admin\cursos\agregar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 21:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 21:07:03 --> syntax error, unexpected variable "$resultado"
+in APPPATH\Views\admin\cursos\agregar.php on line 35.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 3 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 21:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 21:08:27 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `in...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\UserController.php(106): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\UserController->guardarInfo()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 21:08:27 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `infousuario` (`id_Usuario`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `telefono`, `sede`, `created_at`, `updated_at`) VALUES (:id_Usuario:, :nombre:, :apellidoPaterno:, :apellidoMaterno:, :telefono:, :sede:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserController.php(106): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserController->guardarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+ERROR - 2024-05-11 21:08:52 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `in...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\UserController.php(106): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\UserController->guardarInfo()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 21:08:52 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `infousuario` (`id_Usuario`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `telefono`, `sede`, `created_at`, `updated_at`) VALUES (:id_Usuario:, :nombre:, :apellidoPaterno:, :apellidoMaterno:, :telefono:, :sede:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserController.php(106): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserController->guardarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+ERROR - 2024-05-11 21:08:59 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `in...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\UserController.php(106): CodeIgniter\Model->insert(Array)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\UserController->guardarInfo()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 21:08:59 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `infousuario` (`id_Usuario`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `telefono`, `sede`, `created_at`, `updated_at`) VALUES (:id_Usuario:, :nombre:, :apellidoPaterno:, :apellidoMaterno:, :telefono:, :sede:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserController.php(106): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UserController->guardarInfo()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 21:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 21:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 22:00:18 --> Invalid file: "docente/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('docente/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('docente/dashboard', [], true)
+ 3 APPPATH\Controllers\Docente\DocenteController.php(16): view('docente/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Docente\DocenteController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Docente\DocenteController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 22:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 22:00:19 --> Invalid file: "docente/dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('docente/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('docente/dashboard', [], true)
+ 3 APPPATH\Controllers\Docente\DocenteController.php(16): view('docente/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Docente\DocenteController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Docente\DocenteController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 22:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 22:53:45 --> Undefined array key 0
+in APPPATH\Views\admin\cursos\agregar.php on line 35.
+ 1 APPPATH\Views\admin\cursos\agregar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 22:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 22:53:46 --> Undefined array key 0
+in APPPATH\Views\admin\cursos\agregar.php on line 35.
+ 1 APPPATH\Views\admin\cursos\agregar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 22:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 22:53:55 --> Undefined array key 0
+in APPPATH\Views\admin\cursos\agregar.php on line 35.
+ 1 APPPATH\Views\admin\cursos\agregar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 22:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 22:53:56 --> Undefined array key 1
+in APPPATH\Views\admin\cursos\agregar.php on line 35.
+ 1 APPPATH\Views\admin\cursos\agregar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 22:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 22:53:57 --> Undefined array key 1
+in APPPATH\Views\admin\cursos\agregar.php on line 35.
+ 1 APPPATH\Views\admin\cursos\agregar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 22:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 22:54:38 --> Undefined variable $animal
+in APPPATH\Views\admin\cursos\agregar.php on line 33.
+ 1 APPPATH\Views\admin\cursos\agregar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $animal', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 22:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 22:54:39 --> Undefined variable $animal
+in APPPATH\Views\admin\cursos\agregar.php on line 33.
+ 1 APPPATH\Views\admin\cursos\agregar.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $animal', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(29): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 22:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 22:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 23:00:04 --> mysqli_sql_exception: Table 'upncursos.categorias' doesn't exist in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2024-05-11 23:00:04 --> Table 'upncursos.categorias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin\CursosController.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 23:00:05 --> mysqli_sql_exception: Table 'upncursos.categorias' doesn't exist in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#12 {main}
+CRITICAL - 2024-05-11 23:00:05 --> Table 'upncursos.categorias' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categorias`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin\CursosController.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:00:16 --> Undefined property: stdClass::$id
+in APPPATH\Views\admin\cursos\agregar.php on line 45.
+ 1 APPPATH\Views\admin\cursos\agregar.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(32): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:00:17 --> Undefined property: stdClass::$id
+in APPPATH\Views\admin\cursos\agregar.php on line 45.
+ 1 APPPATH\Views\admin\cursos\agregar.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(32): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:01:36 --> Undefined variable $animal
+in APPPATH\Views\admin\cursos\agregar.php on line 54.
+ 1 APPPATH\Views\admin\cursos\agregar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $animal', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(32): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:01:37 --> Undefined variable $animal
+in APPPATH\Views\admin\cursos\agregar.php on line 54.
+ 1 APPPATH\Views\admin\cursos\agregar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $animal', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(32): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:01:42 --> Undefined variable $animal
+in APPPATH\Views\admin\cursos\agregar.php on line 54.
+ 1 APPPATH\Views\admin\cursos\agregar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $animal', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(32): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:01:43 --> Undefined variable $animal
+in APPPATH\Views\admin\cursos\agregar.php on line 54.
+ 1 APPPATH\Views\admin\cursos\agregar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $animal', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(32): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:01:54 --> Undefined variable $animal
+in APPPATH\Views\admin\cursos\agregar.php on line 54.
+ 1 APPPATH\Views\admin\cursos\agregar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $animal', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(32): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:16:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-11 23:20:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH\Controllers\Admin\UsuarioController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-11 23:21:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH\Controllers\Admin\UsuarioController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:27:39 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 23:30:53 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 23:30:54 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 23:30:55 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:33:04 --> parse_str() expects exactly 2 arguments, 1 given
+in APPPATH\Views\admin\cursos\agregar.php on line 66.
+ 1 APPPATH\Views\admin\cursos\agregar.php(66): parse_str('1w')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(32): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:33:06 --> parse_str() expects exactly 2 arguments, 1 given
+in APPPATH\Views\admin\cursos\agregar.php on line 66.
+ 1 APPPATH\Views\admin\cursos\agregar.php(66): parse_str('1w')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(32): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:33:09 --> parse_str() expects exactly 2 arguments, 1 given
+in APPPATH\Views\admin\cursos\agregar.php on line 66.
+ 1 APPPATH\Views\admin\cursos\agregar.php(66): parse_str('1w')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Views\\admin\\cursos\\agregar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/cursos/agregar', [], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(32): view('admin/cursos/agregar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->agregar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:34:07 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 23:39:32 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 23:39:33 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 23:39:33 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:39:55 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 23:40:49 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 23:40:50 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 23:40:51 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:41:57 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+CRITICAL - 2024-05-11 23:42:01 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:45:19 --> explode(): Argument #2 ($string) must be of type string, array given
+in SYSTEMPATH\Router\Router.php on line 475.
+ 1 SYSTEMPATH\Router\Router.php(475): explode('::', [...])
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin/cursos/insertar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin/cursos/insertar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:48:28 --> Undefined array key "estatus"
+in APPPATH\Controllers\Admin\CursosController.php on line 65.
+ 1 APPPATH\Controllers\Admin\CursosController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estatus"', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Controllers\\Admin\\CursosController.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:48:57 --> Undefined array key "estatus"
+in APPPATH\Controllers\Admin\CursosController.php on line 65.
+ 1 APPPATH\Controllers\Admin\CursosController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estatus"', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Controllers\\Admin\\CursosController.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:48:59 --> Undefined array key "estatus"
+in APPPATH\Controllers\Admin\CursosController.php on line 65.
+ 1 APPPATH\Controllers\Admin\CursosController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estatus"', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Controllers\\Admin\\CursosController.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:49:00 --> Undefined array key "estatus"
+in APPPATH\Controllers\Admin\CursosController.php on line 65.
+ 1 APPPATH\Controllers\Admin\CursosController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estatus"', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Controllers\\Admin\\CursosController.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 23:49:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 23:49:10 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 23:49:29 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 23:49:29 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 23:49:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 23:49:40 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 23:49:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 23:49:46 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 23:50:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 23:50:35 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 23:50:57 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 23:50:57 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(69): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:57:40 --> Undefined array key "idCategoria"
+in APPPATH\Controllers\Admin\CursosController.php on line 67.
+ 1 APPPATH\Controllers\Admin\CursosController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCategoria"', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Controllers\\Admin\\CursosController.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:58:04 --> Undefined array key "idCategoria"
+in APPPATH\Controllers\Admin\CursosController.php on line 67.
+ 1 APPPATH\Controllers\Admin\CursosController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCategoria"', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Controllers\\Admin\\CursosController.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:58:06 --> Undefined array key "idCategoria"
+in APPPATH\Controllers\Admin\CursosController.php on line 67.
+ 1 APPPATH\Controllers\Admin\CursosController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCategoria"', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Controllers\\Admin\\CursosController.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:58:07 --> Undefined array key "idCategoria"
+in APPPATH\Controllers\Admin\CursosController.php on line 67.
+ 1 APPPATH\Controllers\Admin\CursosController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCategoria"', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Controllers\\Admin\\CursosController.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-11 23:58:08 --> Undefined array key "idCategoria"
+in APPPATH\Controllers\Admin\CursosController.php on line 67.
+ 1 APPPATH\Controllers\Admin\CursosController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCategoria"', 'C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\app\\Controllers\\Admin\\CursosController.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 23:58:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 23:58:16 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')
+INFO - 2024-05-11 23:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-11 23:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-11 23:59:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`)) in C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\app\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert(Array, true)
+#8 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+#9 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+#10 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Moisés David\Desktop\JUNTAR\Integrador-Enero-Junio-2024\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Mois\xC3\xA9...')
+#13 {main}
+CRITICAL - 2024-05-11 23:59:19 --> Cannot add or update a child row: a foreign key constraint fails (`upncursos`.`curso`, CONSTRAINT `curso_ibfk_1` FOREIGN KEY (`idCategoria`) REFERENCES `categoria` (`idCategoria`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `curso` (`instructor`, `nombre`, `descripcion`, `fechaInicio`, `fechaFin`, `objetivo`, `duracion`, `estatus`, `ilustracion`) VALUES (:instructor:, :nombre:, :descripcion:, :fechaInicio:, :fechaFin:, :objetivo:, :duracion:, :estatus:, :ilustracion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\CursosController.php(70): CodeIgniter\Model->insert([...], true)
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\CursosController->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CursosController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Moisés David\\Desktop\\JUNTAR\\Integrador-Enero-Junio-2024\\public\\index.php')

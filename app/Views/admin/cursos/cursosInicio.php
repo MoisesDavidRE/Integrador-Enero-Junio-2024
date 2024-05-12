@@ -21,14 +21,15 @@
 </div>
 
 <div style="padding-bottom: 25px; padding-top: 10px;position:relative;left:128px">
-  <button href="<?= base_url('admin/cursos/agregar') ?>" type="button" class="btn btn-outline-primary" style="padding: 10px;"><i
-      class="fa-sharp fa-solid fa-plus"></i>Agregar</button>
+
+  <a href="<?= base_url('admin/cursos/agregar') ?>"><button type="button" class="btn btn-outline-primary"
+      style="padding: 10px;"><i class="fa-sharp fa-solid fa-plus"></i>Agregar</button></a>
 </div>
 
 
 
-  <div class="container">
-    <div class="row">
+<div class="container">
+  <div class="row">
 
     <?php foreach ($cursos as $curso): ?>
       <div class="card" style="width: 20rem;position:relative;margin-right: 10px;">

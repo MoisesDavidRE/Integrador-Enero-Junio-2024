@@ -16,11 +16,20 @@ class CursosController extends BaseController
 
     public function agregar()
     {
+        $usersModel = model('UsersModel');
+        $infoModel = model('InfoModel');
+        $categoriasModel = model('CategoriaModel');
+        $instructores = $usersModel->where('perfil',3)->orWhere('perfil',4)->findAll();
+        $infoUsuario = $infoModel->findAll();
+
+        $data=[
+            'categorias' => $categoriasModel->findAll(),
+            'instructores' => $instructores,
+            'infoUsuario' => $infoUsuario
+        ];
         $validation =  \Config\Services::validation();
         if (strtolower($this->request->getMethod()) === 'get') {
-            return view('template/main')
-                .  view('content')
-                .  view('admin/cursos/agregar');
+            return view('admin/cursos/agregar',$data);
         }
 
         $rules = [
@@ -44,15 +53,21 @@ class CursosController extends BaseController
     public function insert()
     {
         $cursosInicioModel = model('CursosInicioModel');
-        $db = \Config\Database::connect();
 
         $data = [
             "instructor" => $_POST['instructor'],
             "nombre" => $_POST['nombre'],
+            "descripcion" => $_POST['descripcion'],
+            "fechaInicio" => $_POST['fechaInicio'],
+            "fechaFin" => $_POST['fechaFin'],
+            "objetivo" => $_POST['objetivo'],
             "duracion" => $_POST['duracion'],
-            "estatus" => $_POST['estatus']
+            "estatus" => $_POST['estatus'],
+            "ilustracion" => $_POST['ilustracion'],
+            "idCategoria" => 3
         ];
-        $cursosInicioModel->insert($data, false);
+
+        $cursosInicioModel->insert($data, true);
         return true;
     }
 

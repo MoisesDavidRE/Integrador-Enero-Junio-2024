@@ -42,9 +42,9 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 	$routes->resource('usuarios/personal', ['controller' => 'Admin\UsuarioController::personal']);
 
 	// CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('cursos', ['controller' => 'Admin\CursosController::cursosInicio']);
-	$routes->get('cursos', ['controller' => 'Admin\CursosController::agregar']); // cursos
-	$routes->post('cursos', ['controller' => 'Admin\CursosController::agregar']); // cursos
+	$routes->get('cursos','Admin\CursosController::cursosInicio');
+	$routes->get('cursos/agregar','Admin\CursosController::agregar'); // cursos
+	$routes->post('cursos/insertar', 'Admin\CursosController::insert'); // cursos
 
 	$routes->get('cursos', ['controller' => 'Admin\CursosController::editar/$1']); // cursos
 	$routes->get('cursos', ['controller' => 'Admin\CursosController::delete/$1']); // cursos
@@ -123,24 +123,21 @@ $routes->group('administrativo', ['filter' => 'auth'], function ($routes) {
 	$routes->resource('perfil', ['controller' => 'AdministrativoSG\PerfilController::index']);
 });
 
-$routes->get('logout', 'UserController::logout');
+$routes->group('docente', ['filter' => 'auth'], function ($routes) {
+	$routes->get('/', 'Docente\DocenteController::index');
+	$routes->resource('cursos', ['controller' => 'Docente\DocenteController::index']);
 
-//rutas liz
-	$routes->resource('usuarios/mostrar', ['controller' => 'Admin\UsuarioController::mostrar']);
-	$routes->get('usuarios/agregar', 'Admin\UsuarioController::agregar');
-	$routes->post('usuarios/agregar', 'Admin\UsuarioController::agregar');
-	$routes->post('usuarios/eliminar/(:num)', 'Admin\UsuarioController::eliminar/$1'); 
-	$routes->post('usuarios/eliminarPersonal/(:num)', 'Admin\UsuarioController::eliminarPersonal/$1'); 
-	$routes->resource('usuarios/editarPersonal', ['controller' => 'Admin\UsuarioController::editarPersonal']);
-	$routes->resource('usuarios/mostrarPersonal', ['controller' => 'Admin\UsuarioController::mostrarPersonal']);
-	$routes->resource('usuarios/agregarPersonal', ['controller' => 'Admin\UsuarioController::agregarPersonal']);
-	$routes->post('usuarios/insert', 'Admin\UsuarioController::insert');
-	$routes->post('usuarios/insertPersonal', 'Admin\UsuarioController::insertPersonal');
-	$routes->get('usuarios/buscar', ['controller' => 'Admin\UsuarioController::buscar']);
-	$routes->get('usuarios/editar/(:num)', 'Admin\UsuarioController::editar/$1');
-	$routes->post('usuarios/actualizar/(:num)', 'Admin\UsuarioController::actualizar/$1');
-	$routes->get('usuarios/editarPersonal/(:num)', 'Admin\UsuarioController::editarPersonal/$1');
-	$routes->post('usuarios/actualizarPersonal/(:num)', 'Admin\UsuarioController::actualizarPersonal/$1');
+	// CURSOS------------------------------------------------------------------------------------------------
+	$routes->resource('cursos', ['controller' => 'Docente\CursosController::index']);
+
+	// MIS CURSOS------------------------------------------------------------------------------------------------
+	$routes->resource('misCursos', ['controller' => 'Docente\MisCursosController::index']);
+
+	// PERFIL------------------------------------------------------------------------------------------------
+	$routes->resource('perfil', ['controller' => 'Docente\PerfilController::index']);
+});
+
+$routes->get('logout', 'UserController::logout');
 
 // 1-admin
 // 2-estudiante

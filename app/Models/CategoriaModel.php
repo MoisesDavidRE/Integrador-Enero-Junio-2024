@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class CursosInicioModel extends Model
+class CategoriaModel extends Model
 {
-    protected $table            = 'curso';
-    protected $primaryKey       = 'idCurso';
+    protected $table            = 'categoria';
+    protected $primaryKey       = 'idCategoria';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $useSoftDeletes   = true;
+    protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['instructor','nombre','descripcion','duracion','fechaInicio','fechaFin','objetivo','estatus','ilustracion','idCategoria' ];
+    protected $allowedFields    = ['nombre','descripcion'];
 
     // Dates
     protected $useTimestamps = false;
