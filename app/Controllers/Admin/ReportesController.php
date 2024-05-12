@@ -91,7 +91,7 @@ class ReportesController extends BaseController
         // pie de página
         $pdf->SetY(255);
         $pdf->SetFont('helvetica', 'I', 8);
-        $pdf->Cell(0, 0, 'Carretera al Ajusco núm. 24, Col. Héroes de Padierna, C.P. 14200, Delegación Tlalpan, México, D.F., Tel.: (55) 56309700 www.upn.mx', 0, false, 'C');
+        $pdf->Cell(0, 0, 'UPN 212 Teziutlán Privada Ignacio Zaragoza 23, C.P. 73820, Barrio de Maxtaco, Teziutlán,MX., Tel.: (+52) 2313122302 https://www.upn212tez.info/', 0, false, 'C');
 
         $pdf->Output('lista_alumnos.pdf', 'I');
         exit();
@@ -135,7 +135,7 @@ class ReportesController extends BaseController
             $session->destroy();
             return redirect('/');
         }
-        $usuarios = $this->usuario->whereIn('perfil', [1, 3, 4, 5])->findAll();
+        $usuarios = $this->usuario->whereIn('perfil', [3, 4])->findAll();
         $informacion = [];
 
         foreach ($usuarios as $usuario) {
@@ -161,7 +161,7 @@ class ReportesController extends BaseController
         $pdf->SetTitle('Lista de Docentes');
         $pdf->AddPage('P', 'LETTER', '', '', 30, 30);
 
-        $imageFile = FCPATH . 'img/OIP.jpeg';
+        $imageFile = FCPATH . 'img\Logo_Upn_Oficial.JPG';
         $pdf->Image($imageFile, 20, 15, 20, 0, 'JPEG');
 
         $pdf->writeHTML($html, true, false, true, false, '');
@@ -171,7 +171,7 @@ class ReportesController extends BaseController
         // pie de página
         $pdf->SetY(250);
         $pdf->SetFont('helvetica', 'I', 8);
-        $pdf->Cell(0, 0, 'Carretera al Ajusco núm. 24, Col. Héroes de Padierna, C.P. 14200, Delegación Tlalpan, México, D.F., Tel.: (55) 56309700 www.upn.mx', 0, false, 'C');
+        $pdf->Cell(0, 0, 'UPN 212 Teziutlán Privada Ignacio Zaragoza 23, C.P. 73820, Barrio de Maxtaco, Teziutlán,MX., Tel.: (+52) 2313122302 https://www.upn212tez.info/', 0, false, 'C');
 
         $pdf->Output('lista_docentes.pdf', 'I');
         exit();
