@@ -14,6 +14,7 @@
     <style {csp-style-nonce}>
         body {
             background-color: rgb(0, 92, 171);
+        
         }
 
         .button-container {
@@ -47,7 +48,7 @@
                 </div>
                 <ul class="sidebar-nav">
                     <li class="sidebar-header">
-                    
+                        Principal
                     </li>
                     <li class="sidebar-item">
                         <a href="<?= base_url('admin/cursos') ?>" class="sidebar-link">
@@ -159,8 +160,7 @@
                 </div>
             </main>
             <a href="#" class="theme-toggle" style="position:absolute,border-bottom:10px">
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun"></i>
+            <i class="fa-regular fa-moon" ></i>
             </a>
         </div>
     </div>

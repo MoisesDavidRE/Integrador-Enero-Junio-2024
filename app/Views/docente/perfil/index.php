@@ -33,12 +33,13 @@
     }
     h1{
       text-align: center;
-      font-size: 15px;
+      font-size: 20px;
     }
     h3{
       text-align: center;
       margin-top: 50px;
       font-weight: bold;
+      font-size: 30px;
     }
     .cursos{
       border: 1px solid #ccc;
@@ -51,15 +52,22 @@
     }
     p{
       color: black;
-      font-size: 16px;
       font-weight: bold;   
       margin-top: 16px;
+      padding: 20px;
+      font-size: 16px;
+    }
+
+    span{
+      color: black;
+      padding: 20px;
+      font-size: 16px;
     }
     
   </style>
 </head>
 <body>
-<h3><span><?= isset($userInfo['nombre']) ? $userInfo['nombre'] : 'No disponible' ?></span></h3>
+<h3><?= isset($userInfo['nombre']) ? $userInfo['nombre'] : 'No disponible' ?></h3>
 <div class="tabla">
     <h1>Detalles del usuario</h1>
 
@@ -77,7 +85,10 @@
       <span><?= isset($userInfo['sede']) ? $userInfo['sede'] : 'No disponible' ?></span>
     </div>
   
-    <button class="edit-button">Editar información</button>
+    <a href="<?= base_url('docente/perfil/editar/'). session('id') ?>">
+      <button class="edit-button">Editar información</button>
+    </a>
+
   </div>
   <div class="cursos">
     <h1>Mis cursos</h1>

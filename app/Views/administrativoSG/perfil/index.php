@@ -77,7 +77,9 @@
       <span><?= isset($userInfo['sede']) ? $userInfo['sede'] : 'No disponible' ?></span>
     </div>
   
-    <button class="edit-button">Editar información</button>
+    <a href="<?= base_url('administrativo/perfil/editar/'). session('id') ?>">
+      <button class="edit-button">Editar información</button>
+    </a>
   </div>
   <div class="cursos">
     <h1>Mis cursos</h1>

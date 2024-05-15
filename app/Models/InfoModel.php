@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class InfoModel extends Model
 {
-    protected $table            = 'infousuario';
+    protected $table            = 'infoUsuario';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';

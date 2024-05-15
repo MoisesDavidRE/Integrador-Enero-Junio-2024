@@ -9,14 +9,14 @@ class App extends BaseConfig
     /**
      * --------------------------------------------------------------------------
      * Base Site URL
-     * --------------------------------------------------------------------------
+* --------------------------------------------------------------------------
      *
      * URL to your CodeIgniter root. Typically, this will be your base URL,
      * WITH a trailing slash:
      *
      *    http://example.com/
      */
-    public string $baseURL = 'http://192.168.1.73:81/';
+    public string $baseURL = 'http://172.16.23.255:80/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.

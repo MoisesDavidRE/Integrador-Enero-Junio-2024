@@ -1,0 +1,360 @@
+INFO - 2024-05-14 04:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 04:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 05:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 05:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:16:56 --> Class "TCPDF" not found
+in APPPATH/Controllers/Admin/ReportesController.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\ReportesController->generarPDF()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:18:06 --> Class "TCPDF" not found
+in APPPATH/Controllers/Admin/ReportesController.php on line 76.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\ReportesController->generarPDF()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:18:59 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:18:59 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:02 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:02 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:02 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:03 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:03 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:03 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:03 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:03 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:04 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:04 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:04 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:04 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:04 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:19:04 --> require(/var/www/html/Integrador-Enero-Junio-2024/public/TCPDF/TCPDF): Failed to open stream: Success
+in APPPATH/Controllers/Admin/ReportesController.php on line 8.
+ 1 APPPATH/Controllers/Admin/ReportesController.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Admin/ReportesController.php(8): require()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/var/www/html/Integrador-Enero-Junio-2024/app/Controllers/Admin/ReportesController.php')
+ 4 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 5 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 7 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 8 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-14 06:19:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH/Controllers/Admin/UsuarioController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 06:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:39:13 --> Trait "TCPDF" not found
+in APPPATH/Controllers/Admin/ReportesController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-05-14 06:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:39:14 --> Trait "TCPDF" not found
+in APPPATH/Controllers/Admin/ReportesController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-05-14 06:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:39:35 --> App\Controllers\Admin\ReportesController cannot use TCPDF - it is not a trait
+in APPPATH/Controllers/Admin/ReportesController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-05-14 06:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:39:36 --> App\Controllers\Admin\ReportesController cannot use TCPDF - it is not a trait
+in APPPATH/Controllers/Admin/ReportesController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-05-14 06:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-14 06:39:36 --> App\Controllers\Admin\ReportesController cannot use TCPDF - it is not a trait
+in APPPATH/Controllers/Admin/ReportesController.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-05-14 06:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 06:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-14 16:31:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH/Controllers/Admin/UsuarioController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 16:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-14 16:31:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH/Controllers/Admin/UsuarioController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 16:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-14 16:32:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH/Controllers/Admin/UsuarioController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 16:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-14 16:32:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH/Controllers/Admin/UsuarioController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 16:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-14 16:32:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH/Controllers/Admin/UsuarioController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 16:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-05-14 16:33:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH/Controllers/Admin/UsuarioController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-14 16:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 16:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-14 17:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -88,25 +88,9 @@ $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 	
 
 	// PERFIL------------------------------------------------------------------------------------------------
-	$routes->resource('perfil', ['controller' => 'Estudiante\PerfilController::index']);
-});
-
-
-// Rutas para el estudiante
-$routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
-	$routes->get('/', 'Estudiante\EstudianteController::index');
-	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::index']);
-
-	// CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::index']);
-
-	// MIS CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('misCursos', ['controller' => 'Estudiante\MisCursosController::index']);
-
-	// PERFIL------------------------------------------------------------------------------------------------
-	$routes->resource('perfil', ['controller' => 'Estudiante\PerfilController::index']);
-});
-
+	$routes->get('perfil', 'Estudiante\PerfilController::index');
+	$routes->get('perfil/editar/(:num)', 'Estudiante\PerfilController::editar/$1');
+	$routes->post('perfil/actualizar', 'Estudiante\PerfilController::actualizar');});
 
 // Rutas para el perfil de administrativo/servicios generales
 $routes->group('administrativo', ['filter' => 'auth'], function ($routes) {
@@ -120,8 +104,9 @@ $routes->group('administrativo', ['filter' => 'auth'], function ($routes) {
 	$routes->resource('misCursos', ['controller' => 'AdministrativoSG\MisCursosController::index']);
 
 	// PERFIL------------------------------------------------------------------------------------------------
-	$routes->resource('perfil', ['controller' => 'AdministrativoSG\PerfilController::index']);
-});
+	$routes->get('perfil', 'AdministrativoSG\PerfilController::index');
+	$routes->get('perfil/editar/(:num)', 'AdministrativoSG\PerfilController::editar/$1');
+	$routes->post('perfil/actualizar', 'AdministrativoSG\PerfilController::actualizar');});
 
 $routes->group('docente', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'Docente\DocenteController::index');
@@ -134,8 +119,9 @@ $routes->group('docente', ['filter' => 'auth'], function ($routes) {
 	$routes->resource('misCursos', ['controller' => 'Docente\MisCursosController::index']);
 
 	// PERFIL------------------------------------------------------------------------------------------------
-	$routes->resource('perfil', ['controller' => 'Docente\PerfilController::index']);
-});
+	$routes->get('perfil', 'Docente\PerfilController::index');
+	$routes->get('perfil/editar/(:num)', 'Docente\PerfilController::editar/$1');
+	$routes->post('perfil/actualizar', 'Docente\PerfilController::actualizar');});
 
 $routes->get('logout', 'UserController::logout');
 

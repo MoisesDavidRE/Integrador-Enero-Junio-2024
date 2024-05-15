@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
+    <title>Registrar</title>
+    <link rel="icon"  href="favicon.ico">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">

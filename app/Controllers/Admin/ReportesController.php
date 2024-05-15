@@ -8,6 +8,7 @@ use TCPDF;
 require ('TCPDF/TCPDF/tcpdf.php');
 class ReportesController extends BaseController
 {
+    
     protected $usuario;
     protected $infoModel;
 

@@ -42,7 +42,6 @@
                 </div>
                 <ul class="sidebar-nav">
                     <li class="sidebar-header">
-                        
                     </li>
                     <li class="sidebar-item">
                         <a href="<?= base_url('administrativo/cursos') ?>" class="sidebar-link">
@@ -119,8 +118,7 @@
                 </div>
             </main>
             <a href="#" class="theme-toggle" style="position:absolute,border-bottom:10px">
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun"></i>
+            
             </a>
         </div>
     </div>

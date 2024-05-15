@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detalles del usuario</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="<?= base_url('ruta-a-tu-style.css') ?>">
   <style>
     .tabla {
       border: 1px solid #ccc;
@@ -55,29 +55,29 @@
       font-weight: bold;   
       margin-top: 16px;
     }
-    
   </style>
 </head>
 <body>
-<h3><span><?= isset($userInfo['nombre']) ? $userInfo['nombre'] : 'No disponible' ?></span></h3>
+<h3><span><?= isset($usuario['nombre']) ? $usuario['nombre'] : 'No disponible' ?></span></h3>
 <div class="tabla">
     <h1>Detalles del usuario</h1>
 
     <div class="user-info">
       <p>Nombre:</p>
-      <span><?= isset($userInfo['nombre']) ? $userInfo['nombre'] : 'No disponible' ?></span>
+      <span><?= isset($usuario['nombre']) ? $usuario['nombre'] : 'No disponible' ?></span>
 
       <p>Correo:</p>
-      <span><?= isset($userInfo['email']) ? $userInfo['email'] : 'No disponible' ?></span>
+      <span><?= isset($usuario['email']) ? $usuario['email'] : 'No disponible' ?></span>
 
       <p>Matrícula:</p>
-      <span><?= isset($userInfo['identificador']) ? $userInfo['identificador'] : 'No disponible' ?></span>
+      <span><?= isset($usuario['identificador']) ? $usuario['identificador'] : 'No disponible' ?></span>
 
       <p>Instituto:</p>
-      <span><?= isset($userInfo['sede']) ? $userInfo['sede'] : 'No disponible' ?></span>
+      <span><?= isset($usuario['sede']) ? $usuario['sede'] : 'No disponible' ?></span>
     </div>
   
-    <button class="edit-button">Editar información</button>
+    <button class="edit-button" onclick="window.location.href = '<?= base_url('estudiante/perfil/editar/') . session('id') ?>'">Editar información</button>
+
   </div>
 
   <div class="cursos">
@@ -90,5 +90,4 @@
   </div>
 </body>
 </html>
-
 <?= $this->endSection(); ?>
