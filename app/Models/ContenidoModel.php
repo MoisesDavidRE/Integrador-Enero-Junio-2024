@@ -7,12 +7,12 @@ use CodeIgniter\Model;
 class ContenidoModel extends Model
 {
     protected $table            = 'contenido';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'idContenido';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['idContenido', 'Contenido'];
+    protected $allowedFields    = ['contenido','ilustracion','idSubtema'];
 
     // Dates
     protected $useTimestamps = true;

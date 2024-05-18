@@ -43,23 +43,27 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 
 	// CURSOS------------------------------------------------------------------------------------------------
 	$routes->get('cursos','Admin\CursosController::cursosInicio');
-	$routes->get('cursos/agregar','Admin\CursosController::agregar'); // cursos
-	$routes->post('cursos/insertar', 'Admin\CursosController::insert'); // cursos
+	$routes->get('cursos/agregar','Admin\CursosController::agregar'); 
+	$routes->post('cursos/insertar', 'Admin\CursosController::insert');
 	$routes->get('cursos/delete/(:num)', 'Admin\CursosController::delete/$1');
 	$routes->get('cursos/editar/(:num)', 'Admin\CursosController::editar/$1');
 	$routes->post('cursos/update', 'Admin\CursosController::update');
-
-	$routes->get('cursos', ['controller' => 'Admin\CursosController::editar/$1']); // cursos
-	$routes->get('cursos', ['controller' => 'Admin\CursosController::delete/$1']); // cursos
-
-	$routes->post('cursos', ['controller' => 'Admin\CursosController::insert']); // cursos
-	$routes->post('cursos', ['controller' => 'Admin\CursosController::update']); // cursos
+	$routes->get('cursos', ['controller' => 'Admin\CursosController::editar/$1']);
+	$routes->get('cursos', ['controller' => 'Admin\CursosController::delete/$1']);
+	$routes->post('cursos', ['controller' => 'Admin\CursosController::insert']);
+	$routes->post('cursos', ['controller' => 'Admin\CursosController::update']);
+	$routes->get('cursos/nuevoTema/(:num)','Admin\CursosController::nuevoTema/$1');
+	$routes->get('cursos/nuevoSubtema/(:num)','Admin\CursosController::nuevoSubtema/$1');
+	$routes->post('cursos/insertarTema','Admin\CursosController::insertarTema');
+	$routes->get('cursos/mostrarTema/(:num)','Admin\CursosController::mostrarTema/$1');
+	$routes->get('cursos/mostrarSubtema/(:num)','Admin\CursosController::mostrarSubtema/$1');
+	$routes->post('cursos/insertarSubtema','Admin\CursosController::insertarSubtema');
+	$routes->get('cursos/contenido/(:num)','Admin\CursosController::mostrarContenido/$1');
 
 	// PERFIL------------------------------------------------------------------------------------------------
 	$routes->get('perfil', 'Admin\PerfilController::index');
 	$routes->get('perfil/editar/(:num)', 'Admin\PerfilController::editar/$1');
 	$routes->post('perfil/actualizar', 'Admin\PerfilController::actualizar');
-
 
 	// REPORTES------------------------------------------------------------------------------------------------
 	$routes->resource('reportes/alumnos', ['controller' => 'Admin\ReportesController::index']);

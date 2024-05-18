@@ -7,12 +7,12 @@ use CodeIgniter\Model;
 class SubtemaModel extends Model
 {
     protected $table            = 'subtema';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'idSubtema';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['idSubtema', 'idTema', 'nombre', 'idContenido'];
+    protected $allowedFields    = ['idTema', 'nombre', 'descripcion'];
 
     // Dates
     protected $useTimestamps = true;

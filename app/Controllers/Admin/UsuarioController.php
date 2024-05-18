@@ -416,7 +416,7 @@ public function insertPersonal()
     $status = $this->request->getPost('status');
 
     $usersModel = model('UsersModel');
-    $infoModel = model('infoModel');
+    $infoModel = model('InfoModel');
 
     $userData = [
         'identificador' => $identificador,
