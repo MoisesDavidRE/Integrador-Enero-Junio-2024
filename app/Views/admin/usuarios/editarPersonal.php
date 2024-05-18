@@ -47,10 +47,12 @@
     </div>
 </head>
 <body>
-    <h1>Actualizar información del personal</h1>
-    <form action="<?php echo base_url('admin/usuarios/personal'); ?>" method="get">
-        <button class="btn btn-primary" type="submit"><i class="fas fa-arrow-left"></i></button>
+     <form action="<?php echo base_url('admin/usuarios/personal'); ?>" method="get">
+        <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit"><i class="fas fa-arrow-left"></i></button>
     </form>
+
+    <h1>Actualizar información del personal</h1>
+   
     <div class="form-container">
         <form id="personalForm" action="<?= base_url('admin/usuarios/actualizarPersonal/' . $usuario->id) ?>" method="POST">
         <div class="form-group">
@@ -94,7 +96,7 @@
                 </select>
             </div>
             <div class="button-enviar">
-                <button id="guardarCambiosBtn" type="submit" class="btn btn-outline-primary">Guardar cambios</button>
+                <button id="guardarCambiosBtn" type="submit" class="btn"  style="color:white;background-color: rgb(0,92,171);">Guardar cambios</button>
             </div>
         </form>
     </div>

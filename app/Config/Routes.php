@@ -45,6 +45,9 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 	$routes->get('cursos','Admin\CursosController::cursosInicio');
 	$routes->get('cursos/agregar','Admin\CursosController::agregar'); // cursos
 	$routes->post('cursos/insertar', 'Admin\CursosController::insert'); // cursos
+	$routes->get('cursos/delete/(:num)', 'Admin\CursosController::delete/$1');
+	$routes->get('cursos/editar/(:num)', 'Admin\CursosController::editar/$1');
+	$routes->post('cursos/update', 'Admin\CursosController::update');
 
 	$routes->get('cursos', ['controller' => 'Admin\CursosController::editar/$1']); // cursos
 	$routes->get('cursos', ['controller' => 'Admin\CursosController::delete/$1']); // cursos

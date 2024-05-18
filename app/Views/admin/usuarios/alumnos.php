@@ -83,10 +83,10 @@
 </style>
 
 <div class="button-container">
-    <button class="btn btn-outline-primary" disabled>Alumnos</button>
+    <button class="btn btn-outline-primary" disabled> <i class="fa-solid fa-users" style="color: #005cab;"></i> Alumnos</button>
     <span style="width:30px"></span>
     <a href="<?= base_url('admin/usuarios/personal') ?>">
-        <button class="btn btn-outline-primary">Personal</button>
+        <button class="btn btn-outline-primary">Personal  </button>
     </a>
 </div>
 
@@ -100,7 +100,7 @@
 
 <!-- Formulario de agregar -->
 <form action="<?= base_url('admin/usuarios/agregar') ?>" method="GET" class="button-agregar">
-    <button type="submit" class="btn btn-outline-primary">Agregar<i class="fa-duotone fa-plus"></i></button>
+    <button type="submit" class="btn btn-outline-primary">+ Agrega</button>
 </form>
 
 <table>
@@ -143,8 +143,8 @@
                                 <i class="fa-solid fa-trash"></i> 
                             </button>
 
-                            <a href="<?= base_url('admin/usuarios/editar/' . $usuario->id) ?>" class="btn btn-success">
-                            <i class="fa-solid fa-pen-to-square"></i>
+                            <a href="<?= base_url('admin/usuarios/editar/' . $usuario->id) ?>" class="btn btn-warning">
+                            <i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i>
                             </a>
                                 </a>
 

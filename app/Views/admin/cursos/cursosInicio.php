@@ -37,7 +37,7 @@
             src="https://static.vecteezy.com/system/resources/previews/005/449/876/non_2x/mathematics-doodle-hand-drawn-school-set-vector.jpg"
             width="300"><br></center>
         <div class="card-body">
-          <h4>Matematicas V </h4>
+          <h4>Curso:</h4>
           <h4>Duracion:</h4>
           <h4>Instructor: </h4>
 
@@ -49,7 +49,7 @@
 
               <p>
               <div style="padding-top: 10px;">
-                <a href="#" class="btn btn-success"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
                 <a href="<?= base_url('admin/cursos/delete/' . $curso->idCurso); ?>" class="btn btn-danger"><i
                     class="fa-solid fa-trash"></i></a>
                 <a href="<?= base_url('admin/cursos/editar/' . $curso->idCurso); ?>" class="btn btn-warning"><i

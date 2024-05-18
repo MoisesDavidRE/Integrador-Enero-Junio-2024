@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competencias</title>
+    <title>UPN 212 Cursos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/dash.css') ?>">
@@ -14,7 +14,6 @@
     <style {csp-style-nonce}>
         body {
             background-color: rgb(0, 92, 171);
-        
         }
 
         .button-container {
@@ -39,10 +38,10 @@
             </div>
             <div class="h-100">
                 <div class="sidebar-logo">
-                    <a href="#">
+                    <a href="<?= base_url('admin/cursos') ?>">
                         <?= session()->get('nombre') . " " . session()->get('apaterno') ?>
                     </a><br>
-                    <a href="#" style="font-size:10px">
+                    <a href="<?= base_url('admin/cursos') ?>" style="font-size:10px">
                         Matrícula: <?= session()->get('identificador') ?>
                     </a>
                 </div>

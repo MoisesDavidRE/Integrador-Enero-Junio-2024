@@ -1,43 +1,129 @@
+<?= $this->extend('template/main'); ?>
+<?= $this->section('content'); ?>
+
 <div class="container">
     <div class="row">
-        <?php print_r($curso); ?>
+        <?php
+        if (isset($validation)) {
+            print $validation->listErrors();
+        }
+        $db = \Config\Database::connect();
+        ?>
 
-        <div class="col-8">
-            <h2>Editar Curso</h2>
-            <form action="<?= base_url('admin/cursos/update'); ?>" method="POST">
-                <?= csrf_field() ?>
-                <input type="hidden" name="idCurso" value="<?= $curso->idCurso; ?>">
+<form action="<?php echo base_url('admin/cursos'); ?>" method="get">
+    <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit"><i class="fas fa-arrow-left"></i></button>
+        </form>
 
-                <div class="mb-3">
-                    <label for="instructor" class="form-label">Instructor</label>
-                    <input type="text" class="form-control" name="instructor" id="instructor" value="<?= $curso->nombre; ?>">
-                </div>
+        <div class="col-12">+
 
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" value="<?= $curso->nombre; ?>">
-                </div>
+        +
+        <center><h1 class="mb-5">Editar el curso curso "<?=$curso->nombre?>"</h1></center>
+        <form action="<?= base_url('admin/cursos/update'); ?>" method="POST">
+  <?= csrf_field() ?>
+    <input type="hidden" name="idCurso" value="<?= $curso->idCurso ?>">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre del curso</label>
+        <input type="text" class="form-control" name="nombre" id="nombre" value="<?= $curso->nombre ?>">
+      </div>
 
-                <div class="mb-3">
-                    <label for="duracion" class="form-label">Duracion</label>
-                    <input type="text" class="form-control" name="duracion" id="duracion" value="<?= $curso->duracion; ?>">
-                </div>
+      <div class="mb-3">
+        <label for="instructor" class="form-label">Instructor</label>
+        <select class="form-control" id="instructor" name="instructor" required>
+          <option value="<?= $curso->instructor ?>">
+          <?php
+                $query = "SELECT nombre, apellidoPaterno, apellidoMaterno FROM infoUsuario WHERE id_Usuario = $curso->instructor";
+                $resultado = $db->query($query)->getResultArray();
+                echo $resultado[0]["nombre"] . " " . $resultado[0]["apellidoPaterno"] . " " . $resultado[0]["apellidoMaterno"];
+              ?>
+        </option> 
+          <?php foreach ($instructores as $usr): ?>
+            <option value="<?= (String)$usr->id ?>">
+              <?php
+                $query = "SELECT nombre, apellidoPaterno, apellidoMaterno FROM infoUsuario WHERE id_Usuario = $usr->id";
+                $resultado = $db->query($query)->getResultArray();
+                echo $resultado[0]["nombre"] . " " . $resultado[0]["apellidoPaterno"] . " " . $resultado[0]["apellidoMaterno"];
+              ?>
+            </option>
+          <?php endforeach ?>
+        <-/select>
+      </div>
 
-                <div class="mb-3">
-                    <label for="estatus" class="form-label">Estatus</label>
-                    <input type="status" class="form-control" name="estatus" id="estatus" value="<?= $curso->estatus; ?>">
-                </div>
+      <div class="mb-3">
+        <label for="categoria" class="form-label">Categoría</label>
+        <select class="form-control" id="idCategoria" name="idCategoria" required>
+          <?php foreach ($categorias as $categoria): ?>
+            <?php if($curso->idCategoria == $categoria->idCategoria):?>
+            <option value="<?= $curso->idCategoria ?>" selected><?= $categoria->nombre ?></option>
+            <?php endif ?>
+            <option value="<?= $categoria->idCategoria ?>">
+              <?= $categoria->nombre ?>
+            </option>
+          <?php endforeach ?>
+        </select>
+      </div>
 
-               
+      <label>Descripción</label>
+      <textarea name="descripcion" class="form-control mb-3" aria-label="With textarea" style="height: 100px;" ><?= $curso->descripcion?></textarea>
 
-                <div class="mb-3">
-                    <input type="submit" class="btn btn-success">
-                </div>
-
-
-            </form>
-
-        </div>
-        <div class="col-3"></div>
+      <div class="mb-3">
+        <label for="estatus" class="form-label">Estatus</label>
+        <select class="form-control" id="estatus" name="estatus" required>
+          <option value="Activo" <?php if($curso->estatus == "Activo") echo "Selected"?>>Activo</option>
+          <option value="Inactivo" <?php if($curso->estatus == "Inactivo") echo "Selected"?>>Inactivo</option>
+        </select>
+      </div>
     </div>
+
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="duracion" class="form-label">Duración:</label>
+        <select class="form-control" id="duracion" name="duracion" required>
+        <option value="<?= $curso->duracion?>" selected ><?= $curso->duracion?> </option>
+          <?php for ($i = 1; $i < 18; $i++): ?>
+            <option value="<?= (String) $i."w" ?>">
+              <?php if ($i == 1) {echo $i . " semana";} else {echo $i . " semanas"; } ?>
+            </option>
+          <?php endfor ?>
+        </select>
+      </div>
+
+      
+      <div class="mb-3">
+        <label for="fechaInicio" class="form-label">Fecha de Inicio</label>
+        <input type="date" class="form-control" name="fechaInicio" id="fechaInicio" value="<?= $curso->fechaInicio ?>">
+      </div>
+      <div class="mb-3">
+        <label for="fechaFin" class="form-label">Fecha de Finalización</label>
+        <input type="date" class="form-control" name="fechaFin" id="fechaFin" value="<?= $curso->fechaFin ?>">
+      </div>
+
+      <div class="mb-3">
+        <label for="objetivo" class="form-label">Objetivo</label>
+        <input type="text" class="form-control" name="objetivo" id="objetivo" value="<?= $curso->objetivo ?>">
+      </div>
+
+      <label>Ilustración del curso</label>
+      <input type="text" class="form-control mb-3" name="ilustracion" placeholder="Ingresa la URL de tu imagen" value="<?= $curso->ilustracion ?>">
+    </div>
+  </div>
+
+  <input type="submit" class="btn mb-3"style="color:white;background-color: rgb(0,92,171);" value="Guardar cambios">
+</form>
+
+<form action="<?php echo base_url('admin/cursos/nuevoTema/'.$curso->idCurso) ; ?>" method="get">
+    <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit">Agregar un nuevo tema +</i></button>
+</form>
+
+<h5>Temas asignados al curso:</h5>
+<?php foreach($temas as $tema) :?>
+
+<?php endforeach ?>
+
+    </div>
+    <div class="col-3"></div>
 </div>
+</div>
+
+<?= $this->endSection(); ?>

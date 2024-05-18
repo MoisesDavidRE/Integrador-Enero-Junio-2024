@@ -54,11 +54,12 @@
     }
 
 </style>
+<form action="<?php echo base_url('admin/usuarios/personal'); ?>" method="get">
+    <button class="btn"  style="color:white;background-color: rgb(0,92,171);" type="submit"><i class="fas fa-arrow-left"></i></button>
+</form>
 
 <h1>Agregar personal</h1>
-<form action="<?php echo base_url('admin/usuarios/personal'); ?>" method="get">
-    <button class="btn btn-primary" type="submit"><i class="fas fa-arrow-left"></i></button>
-</form>
+
 <form id="personalForm" action="<?= base_url('admin/usuarios/insertPersonal') ?>" method="POST">
     <div class="form-container">
     <div class="form-group">
@@ -116,7 +117,7 @@
             
         <div class="button-enviar">
             <a href="<?= base_url('admin/usuarios/personal') ?>">
-                <button class="btn btn-outline-primary">Enviar</button>
+                <button class="btn"  style="color:white;background-color: rgb(0,92,171);">Enviar</button>
             </a>
         </div>
     </div>

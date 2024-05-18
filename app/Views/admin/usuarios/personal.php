@@ -47,7 +47,7 @@
   <button class="btn btn-outline-primary">Alumnos</button>
 </a>
   <span style="width:30px"></span>
-    <button class="btn btn-outline-primary" disabled>Personal</button>
+    <button class="btn btn-outline-primary" disabled> <i class="fa-sharp fa-solid fa-user-tie" style="color: #005cab;"></i> Personal </button>
 </div>
 
 <h1>Lista del personal</h1>
@@ -60,7 +60,7 @@
 
 <div class="button-agregar">
   <a href="<?= base_url('admin/usuarios/agregarPersonal') ?>">
-    <button class="btn btn-outline-primary">Agregar<i class="fa-duotone fa-plus"></i></button>
+    <button class="btn btn-outline-primary">+ Agregar</button>
   </a>
 </div>
 
@@ -142,8 +142,8 @@
                                 <i class="fa-solid fa-trash"></i> 
                             </button>
 
-                            <a href="<?= base_url('admin/usuarios/editarPersonal/' . $usuario->id) ?>" class="btn btn-success">
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                            <a href="<?= base_url('admin/usuarios/editarPersonal/' . $usuario->id) ?>" class="btn btn-warning">
+                            <i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i>
                             </a> 
                         </div>
                     </td>
