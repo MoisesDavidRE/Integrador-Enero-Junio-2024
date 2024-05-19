@@ -10,7 +10,7 @@ class CursosInicioModel extends Model
     protected $primaryKey       = 'idCurso';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $useSoftDeletes   = true;
+    protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = ['instructor','nombre','descripcion','duracion','fechaInicio','fechaFin','objetivo','estatus','ilustracion','idCategoria' ];
 

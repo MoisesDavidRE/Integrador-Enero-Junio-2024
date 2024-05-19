@@ -76,13 +76,14 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 
 $routes->post('user/guardarInfo', 'UserController::guardarInfo');
 $routes->get('user/completarInfo/(:num)', 'UserController::completarInfo/$1');
+
 // Rutas para el estudiante
 $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'Estudiante\EstudianteController::index');
-	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::cursosInicio']);
+	$routes->get('cursos','Estudiante\CursosController::cursosInicio');
 
 	// CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::cursosInicio']);
+	$routes->get('cursos', 'Estudiante\CursosController::cursosInicio');
 
 	// MIS CURSOS------------------------------------------------------------------------------------------------
 	$routes->get('misCursos', 'Estudiante\MisCursosController::index');
@@ -91,8 +92,6 @@ $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 	$routes->get('misCursos/subtema3', 'Estudiante\MisCursosController::subtema3');
 	$routes->get('misCursos/subtema4', 'Estudiante\MisCursosController::subtema4');
 	$routes->get('misCursos/evaluacion', 'Estudiante\MisCursosController::evaluacion');
-
-	
 
 	// PERFIL------------------------------------------------------------------------------------------------
 	$routes->get('perfil', 'Estudiante\PerfilController::index');
