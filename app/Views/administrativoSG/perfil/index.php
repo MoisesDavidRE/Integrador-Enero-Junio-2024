@@ -65,7 +65,7 @@
 
     <div class="user-info">
       <p>Nombre:</p>
-      <span><?= isset($userInfo['nombre']) ? $userInfo['nombre'] : 'No disponible' ?></span>
+      <span><?= $userInfo['nombre']." ". $userInfo['apellidoPaterno']." " .$userInfo['apellidoMaterno']?></span>
 
       <p>Correo:</p>
       <span><?= isset($userInfo['email']) ? $userInfo['email'] : 'No disponible' ?></span>

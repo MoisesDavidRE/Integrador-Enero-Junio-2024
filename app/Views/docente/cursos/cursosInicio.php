@@ -6,7 +6,7 @@
 </Style>
 
 
-<?= $this->extend('template/mainAdministrativo'); ?>
+<?= $this->extend('template/mainDocente'); ?>
 <?= $this->section('content'); ?>
 
 <h1 align="center">Inicio</h1>
@@ -22,7 +22,7 @@
 
 <div style="padding-bottom: 25px; padding-top: 10px;position:relative;left:128px">
 
-  <a href="<?= base_url('administrativo/cursos/agregar') ?>"><button type="button" class="btn btn-outline-primary" style="padding: 10px;"><i class="fa-sharp fa-solid fa-plus"></i>Agregar</button></a>
+  <a href="<?= base_url('docente/cursos/agregar') ?>"><button type="button" class="btn btn-outline-primary" style="padding: 10px;"><i class="fa-sharp fa-solid fa-plus"></i>Agregar</button></a>
 </div>
 
 
@@ -54,8 +54,8 @@
               <p>
               <div style="padding-top: 10px;">
                 <a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
-                <a href="<?= base_url('administrativo/cursos/delete/' . $curso->idCurso); ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-                <a href="<?= base_url('administrativo/cursos/editar/' . $curso->idCurso); ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square <i class=" fa-regular fa-pen-to-square" style="color: #ffffff;"></i></a>
+                <a href="<?= base_url('docente/cursos/delete/' . $curso->idCurso); ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                <a href="<?= base_url('docente/cursos/editar/' . $curso->idCurso); ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square <i class=" fa-regular fa-pen-to-square" style="color: #ffffff;"></i></a>
               </div>
               </p>
             </div>

@@ -1,4 +1,4 @@
-<?= $this->extend('template/mainAdministrativo'); ?>
+<?= $this->extend('template/mainDocente'); ?>
 <?= $this->section('content'); ?>
 
 <div class="container">
@@ -9,7 +9,7 @@
             </div>
         <?php endif; ?>
 
-        <form action="<?php echo base_url('administrativo/cursos'); ?>" method="get">
+        <form action="<?php echo base_url('docente/cursos'); ?>" method="get">
             <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit"><i class="fas fa-arrow-left"></i></button>
         </form>
 
@@ -17,7 +17,7 @@
             <center>
                 <h1 class="mb-5">Agregar un nuevo curso</h1>
             </center>
-            <form action="<?= base_url('administrativo/cursos/insertar'); ?>" method="POST">
+            <form action="<?= base_url('docente/cursos/insertar'); ?>" method="POST">
                 <?= csrf_field() ?>
 
 

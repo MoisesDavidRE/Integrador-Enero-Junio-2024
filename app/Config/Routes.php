@@ -79,10 +79,10 @@ $routes->get('user/completarInfo/(:num)', 'UserController::completarInfo/$1');
 // Rutas para el estudiante
 $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'Estudiante\EstudianteController::index');
-	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::index']);
+	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::cursosInicio']);
 
 	// CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::index']);
+	$routes->resource('cursos', ['controller' => 'Estudiante\CursosController::cursosInicio']);
 
 	// MIS CURSOS------------------------------------------------------------------------------------------------
 	$routes->get('misCursos', 'Estudiante\MisCursosController::index');
@@ -102,13 +102,29 @@ $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 // Rutas para el perfil de administrativo/servicios generales
 $routes->group('administrativo', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'AdministrativoSG\AdministrativoSGController::index');
-	$routes->resource('cursos', ['controller' => 'AdministrativoSG\AdministrativoSGController::index']);
+	$routes->get('cursos', 'AdministrativoSG\CursosController::cursosInicio');
 
 	// CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('cursos', ['controller' => 'AdministrativoSG\CursosController::index']);
+	$routes->get('cursos', 'AdministrativoSG\CursosController::cursosInicio');
+	$routes->get('cursos/agregar','AdministrativoSG\CursosController::agregar'); 
+	$routes->post('cursos/insertar', 'AdministrativoSG\CursosController::insert');
+	$routes->get('cursos/delete/(:num)', 'AdministrativoSG\CursosController::delete/$1');
+	$routes->get('cursos/editar/(:num)', 'AdministrativoSG\CursosController::editar/$1');
+	$routes->post('cursos/update', 'AdministrativoSG\CursosController::update');
+	$routes->get('cursos', ['controller' => 'AdministrativoSG\CursosController::editar/$1']);
+	$routes->get('cursos', ['controller' => 'AdministrativoSG\CursosController::delete/$1']);
+	$routes->post('cursos', ['controller' => 'AdministrativoSG\CursosController::insert']);
+	$routes->post('cursos', ['controller' => 'AdministrativoSG\CursosController::update']);
+	$routes->get('cursos/nuevoTema/(:num)','AdministrativoSG\CursosController::nuevoTema/$1');
+	$routes->get('cursos/nuevoSubtema/(:num)','AdministrativoSG\CursosController::nuevoSubtema/$1');
+	$routes->post('cursos/insertarTema','AdministrativoSG\CursosController::insertarTema');
+	$routes->get('cursos/mostrarTema/(:num)','AdministrativoSG\CursosController::mostrarTema/$1');
+	$routes->get('cursos/mostrarSubtema/(:num)','AdministrativoSG\CursosController::mostrarSubtema/$1');
+	$routes->post('cursos/insertarSubtema','AdministrativoSG\CursosController::insertarSubtema');
+	$routes->get('cursos/contenido/(:num)','AdministrativoSG\CursosController::mostrarContenido/$1');
 
 	// MIS CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('misCursos', ['controller' => 'AdministrativoSG\MisCursosController::index']);
+	$routes->get('misCursos','AdministrativoSG\CursosController::cursosInicio');
 
 	// PERFIL------------------------------------------------------------------------------------------------
 	$routes->get('perfil', 'AdministrativoSG\PerfilController::index');
@@ -117,10 +133,25 @@ $routes->group('administrativo', ['filter' => 'auth'], function ($routes) {
 
 $routes->group('docente', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'Docente\DocenteController::index');
-	$routes->resource('cursos', ['controller' => 'Docente\DocenteController::index']);
 
 	// CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('cursos', ['controller' => 'Docente\CursosController::index']);
+	$routes->get('cursos','Docente\CursosController::cursosInicio');
+	$routes->get('cursos/agregar','Docente\CursosController::agregar'); 
+	$routes->post('cursos/insertar', 'Docente\CursosController::insert');
+	$routes->get('cursos/delete/(:num)', 'Docente\CursosController::delete/$1');
+	$routes->get('cursos/editar/(:num)', 'Docente\CursosController::editar/$1');
+	$routes->post('cursos/update', 'Docente\CursosController::update');
+	$routes->get('cursos', ['controller' => 'Docente\CursosController::editar/$1']);
+	$routes->get('cursos', ['controller' => 'Docente\CursosController::delete/$1']);
+	$routes->post('cursos', ['controller' => 'Docente\CursosController::insert']);
+	$routes->post('cursos', ['controller' => 'Docente\CursosController::update']);
+	$routes->get('cursos/nuevoTema/(:num)','Docente\CursosController::nuevoTema/$1');
+	$routes->get('cursos/nuevoSubtema/(:num)','Docente\CursosController::nuevoSubtema/$1');
+	$routes->post('cursos/insertarTema','Docente\CursosController::insertarTema');
+	$routes->get('cursos/mostrarTema/(:num)','Docente\CursosController::mostrarTema/$1');
+	$routes->get('cursos/mostrarSubtema/(:num)','Docente\CursosController::mostrarSubtema/$1');
+	$routes->post('cursos/insertarSubtema','Docente\CursosController::insertarSubtema');
+	$routes->get('cursos/contenido/(:num)','Docente\CursosController::mostrarContenido/$1');
 
 	// MIS CURSOS------------------------------------------------------------------------------------------------
 	$routes->resource('misCursos', ['controller' => 'Docente\MisCursosController::index']);

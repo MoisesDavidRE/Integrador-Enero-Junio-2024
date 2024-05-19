@@ -16,6 +16,8 @@ class PerfilController extends BaseController
 
         $userInfo = [
             'nombre' => $session->get('nombre'),
+            'apellidoPaterno'=>$session->get('apaterno'),
+            'apellidoMaterno'=>$session->get('amaterno'),
             'email' => $session->get('email'),
             'identificador' => $session->get('identificador'),
             'sede' => $session->get('sede')

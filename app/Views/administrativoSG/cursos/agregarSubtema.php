@@ -1,4 +1,4 @@
-<?= $this->extend('template/main'); ?>
+<?= $this->extend('template/mainAdministrativo'); ?>
 <?= $this->section('content'); ?>
 
 <div class="container">
@@ -9,7 +9,7 @@
             </div>
         <?php endif; ?>
 
-        <form action="<?php echo base_url('admin/cursos/mostrarTema/'.$tema); ?>" method="get">
+        <form action="<?php echo base_url('administrativo/cursos/mostrarTema/'.$tema); ?>" method="get">
             <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit"><i class="fas fa-arrow-left"></i></button>
         </form>
 
@@ -17,7 +17,7 @@
             <center>
                 <h1 class="mb-5">Agregar un nuevo subtema</h1>
             </center>
-            <form action="<?= base_url('admin/cursos/insertarSubtema'); ?>" method="POST">
+            <form action="<?= base_url('administrativo/cursos/insertarSubtema'); ?>" method="POST">
                 <?= csrf_field() ?>
 
                 <div class="row">

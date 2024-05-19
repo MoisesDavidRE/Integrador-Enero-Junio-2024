@@ -1,4 +1,4 @@
-<?= $this->extend('template/mainAdministrativo'); ?>
+<?= $this->extend('template/mainDocente'); ?>
 <?= $this->section('content'); ?>
 
 <div class="container">
@@ -9,7 +9,7 @@
       </div>
     <?php endif; ?>
 
-    <form action="<?php echo base_url('administrativo/cursos/editar/' . $tema->idCurso); ?>" method="get">
+    <form action="<?php echo base_url('docente/cursos/editar/' . $tema->idCurso); ?>" method="get">
       <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit"><i class="fas fa-arrow-left"></i></button>
     </form>
 
@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <form action="<?php echo base_url('administrativo/cursos/nuevoSubtema/' . $tema->idTema); ?>" method="get">
+      <form action="<?php echo base_url('docente/cursos/nuevoSubtema/' . $tema->idTema); ?>" method="get">
         <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit">Agregar un nuevo subtema +</i></button>
       </form>
       <h2>Subtemas pertenecientes al tema <strong><?= $tema->nombre ?></strong></h2>
@@ -56,7 +56,7 @@
               </div>
             </div>
             <div class="text">
-              <form action="<?php echo base_url('administrativo/cursos/mostrarSubtema/' . $subtema->idSubtema); ?>" method="get">
+              <form action="<?php echo base_url('docente/cursos/mostrarSubtema/' . $subtema->idSubtema); ?>" method="get">
                 <button class="boton" type="submit"><?= $subtema->nombre ?></button>
               </form>
             </div>

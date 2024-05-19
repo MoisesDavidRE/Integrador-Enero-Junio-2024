@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/dash.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/buttons.css') ?>">
 
     <style {csp-style-nonce}>
         body {
@@ -93,7 +94,7 @@
                                 <?= session()->get('email') ?>
                             </a>
                         </li>
-                        <div class="h100" style="position:fixed,margin-bottom:100px">
+                        <div class="h100" style="position:fixed;margin-bottom:100px">
                             <li class="nav-item">
                                 <a href="<?= base_url('logout'); ?>" class="nav-link">
                                     <i class="fas fa-sign-out-alt"></i> Cerrar sesión
@@ -118,7 +119,7 @@
 
                 </div>
             </main>
-            <a href="#" class="theme-toggle" style="position:absolute,border-bottom:10px">
+            <a href="#" class="theme-toggle" style="position:absolute;border-bottom:10px">
             </a>
         </div>
     </div>

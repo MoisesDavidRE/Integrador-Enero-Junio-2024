@@ -1,4 +1,4 @@
-<?= $this->extend('template/mainAdministrativo'); ?>
+<?= $this->extend('template/mainDocente'); ?>
 <?= $this->section('content'); ?>
 <div class="container">
   <div class="row">
@@ -9,7 +9,7 @@
     $db = \Config\Database::connect();
     ?>
 
-    <form action="<?php echo base_url('administrativo/cursos'); ?>" method="get">
+    <form action="<?php echo base_url('docente/cursos'); ?>" method="get">
       <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit"><i class="fas fa-arrow-left"></i></button>
     </form>
 
@@ -18,7 +18,7 @@
       <center>
         <h1 class="mb-5">Editar el curso curso "<?= $curso->nombre ?>"</h1>
       </center>
-      <form action="<?= base_url('administrativo/cursos/update'); ?>" method="POST">
+      <form action="<?= base_url('docente/cursos/update'); ?>" method="POST">
         <?= csrf_field() ?>
         <input type="hidden" name="idCurso" value="<?= $curso->idCurso ?>">
         <div class="row">
@@ -122,7 +122,7 @@
         <center><input type="submit" class="btn mb-3" style="color:white;background-color: rgb(0,92,171);" value="Guardar cambios"></center>
       </form>
 
-      <form action="<?php echo base_url('administrativo/cursos/nuevoTema/' . $curso->idCurso); ?>" method="get">
+      <form action="<?php echo base_url('docente/cursos/nuevoTema/' . $curso->idCurso); ?>" method="get">
         <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit">Agregar un nuevo
           tema +</i></button>
       </form>
@@ -148,7 +148,7 @@
               </div>
             </div>
             <div class="text">
-              <form action="<?php echo base_url('administrativo/cursos/mostrarTema/' . $tema->idTema); ?>" method="get">
+              <form action="<?php echo base_url('docente/cursos/mostrarTema/' . $tema->idTema); ?>" method="get">
                 <button class="boton" type="submit"><?= $tema->nombre ?></button>
               </form>
             </div>

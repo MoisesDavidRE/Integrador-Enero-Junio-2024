@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\Admin;
+namespace App\Controllers\AdministrativoSG;
 
 use App\Controllers\BaseController;
 use App\Models\ContenidoModel;
@@ -15,7 +15,7 @@ class CursosController extends BaseController
     {
         $model = model('CursosInicioModel');
         $data['cursos']=$model->findAll();
-        return view('admin/cursos/cursosInicio',$data);
+        return view('administrativoSG/cursos/cursosInicio',$data);
     }
 
     public function agregar()
@@ -35,7 +35,7 @@ class CursosController extends BaseController
         $validation = \Config\Services::validation();
     
         if (strtolower($this->request->getMethod()) === 'get') {
-            return view('admin/cursos/agregar', $data);
+            return view('administrativoSG/cursos/agregar', $data);
         }
     
         $rules = [
@@ -104,10 +104,10 @@ class CursosController extends BaseController
             $data['validation'] = $validation;
             return view('template/main')
                 . view('content')
-                . view('admin/cursos/agregar', $data);
+                . view('administrativoSG/cursos/agregar', $data);
         } else {
             if ($this->insert()) {
-                return redirect('admin/cursos/cursosInicio');
+                return redirect('administrativoSG/cursos/cursosInicio');
             }
         }
     }
@@ -130,14 +130,14 @@ class CursosController extends BaseController
         ];
 
         $cursosInicioModel->insert($data, true);
-        return redirect('admin/cursos');
+        return redirect('administrativo/cursos');
     }
 
     public function delete($idCurso)
     {
         $cursosInicioModel = model('CursosInicioModel');
         $cursosInicioModel->delete($idCurso);
-        return redirect('admin/cursos');
+        return redirect('administrativo/cursos');
     }
 
     public function editar($idCurso)
@@ -158,7 +158,7 @@ class CursosController extends BaseController
             'temas'=> $temas,
             'curso' => $cursosInicioModel->find($idCurso)
         ];
-        return view('admin/cursos/editar', $data);
+        return view('administrativoSG/cursos/editar', $data);
     }
 
     public function update (){
@@ -179,14 +179,14 @@ class CursosController extends BaseController
         ];
 
         $cursosInicioModel->update($_POST['idCurso'],$data);
-        return redirect('admin/cursos');
+        return redirect('administrativo/cursos');
     } 
 
     public function nuevoTema($idCurso){
         $data=[
             'curso'=>$idCurso
         ];
-        return view('admin/cursos/agregarTema',$data);
+        return view('administrativoSG/cursos/agregarTema',$data);
     }
 
     public function insertarTema()
@@ -215,7 +215,7 @@ class CursosController extends BaseController
             'temas'=> $temas,
             'curso' => $cursosInicioModel->find($_POST['idCurso'])
         ];
-        return view('admin/cursos/editar',$dataC);
+        return view('administrativoSG/cursos/editar',$dataC);
     }
 
     public function mostrarTema ($idTema) {
@@ -227,14 +227,14 @@ class CursosController extends BaseController
             'tema'=> $tema,
             'subtemas' => $subtemaModel->where('idTema',$idTema)->findAll()
         ];
-        return view('admin/cursos/mostrarTema',$data);
+        return view('administrativoSG/cursos/mostrarTema',$data);
     }
 
     public function nuevoSubtema($idTema){
         $data=[
             'tema'=>$idTema
         ];
-        return view('admin/cursos/agregarSubtema',$data);
+        return view('administrativoSG/cursos/agregarSubtema',$data);
     }
 
     public function insertarSubtema()
@@ -252,7 +252,7 @@ class CursosController extends BaseController
             'tema' => $temaModel->find($_POST['idTema']),
             'subtemas' => $subtemaModel->where('idTema',$_POST['idTema'])->findAll()
         ];
-        return view('admin/cursos/mostrarTema',$dataS);
+        return view('administrativoSG/cursos/mostrarTema',$dataS);
     }
 
     public function mostrarSubtema ($idSubtema) {
@@ -261,7 +261,7 @@ class CursosController extends BaseController
         $data = [
             'subtema' => $subtema,
         ];
-        return view('admin/cursos/mostrarSubtema',$data);
+        return view('administrativoSG/cursos/mostrarSubtema',$data);
     }
 
     public function mostrarContenido ($idSubtema) {
@@ -271,7 +271,7 @@ class CursosController extends BaseController
         $data = [
             'subtema' => $subtema
         ];
-        return view('admin/cursos/mostrarContenido',$data);
+        return view('administrativoSG/cursos/mostrarContenido',$data);
     }
     
 }

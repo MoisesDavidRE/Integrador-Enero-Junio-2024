@@ -1,4 +1,4 @@
-<?= $this->extend('template/mainAdministrativo'); ?>
+<?= $this->extend('template/mainDocente'); ?>
 <?= $this->section('content'); ?>
 
 <div class="container">
@@ -9,7 +9,7 @@
             </div>
         <?php endif; ?>
 
-        <form action="<?php echo base_url('administrativo/cursos/mostrarTema/' . $subtema->idTema); ?>" method="get">
+        <form action="<?php echo base_url('docente/cursos/mostrarTema/' . $subtema->idTema); ?>" method="get">
             <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit"><i class="fas fa-arrow-left"></i></button>
         </form>
 
@@ -36,7 +36,7 @@
             <?php 
             print_r($subtema)?>
 
-            <form action="<?php echo base_url('administrativo/cursos/contenido/'.$subtema->idSubtema); ?>" method="get">
+            <form action="<?php echo base_url('docente/cursos/contenido/'.$subtema->idSubtema); ?>" method="get">
                 <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit">Editar el contenido del subtema</i></button>
             </form>
             
