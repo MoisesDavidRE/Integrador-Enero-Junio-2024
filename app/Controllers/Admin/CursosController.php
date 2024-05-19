@@ -250,7 +250,7 @@ class CursosController extends BaseController
         
         $dataS=[ 
             'tema' => $temaModel->find($_POST['idTema']),
-            'subtema' => $subtemaModel->where('idTema',$_POST['idTema'])
+            'subtemas' => $subtemaModel->where('idTema',$_POST['idTema'])->findAll()
         ];
         return view('admin/cursos/mostrarTema',$dataS);
     }
