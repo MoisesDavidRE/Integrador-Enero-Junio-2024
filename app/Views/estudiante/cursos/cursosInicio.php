@@ -54,8 +54,8 @@
               <p>
               <div style="padding-top: 10px;">
                 <a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
-                <a href="<?= base_url('estudiante/cursos/delete/' . $curso->idCurso); ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-                <a href="<?= base_url('estudiante/cursos/editar/' . $curso->idCurso); ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square <i class=" fa-regular fa-pen-to-square" style="color: #ffffff;"></i></a>
+                <a href="<?= base_url('estudiante/cursos/inscribirse/' . $curso->idCurso); ?>" class="btn btn-danger">Inscribirse</a>
+                
               </div>
               </p>
             </div>

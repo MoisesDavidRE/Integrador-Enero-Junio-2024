@@ -12,7 +12,7 @@ class CursosInicioModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['instructor','nombre','descripcion','duracion','fechaInicio','fechaFin','objetivo','estatus','ilustracion','idCategoria' ];
+    protected $allowedFields    = ['instructor','nombre','descripcion','duracion','fechaInicio','fechaFin','objetivo','estatus','ilustracion','idCategoria','visibilidad' ];
 
     // Dates
     protected $useTimestamps = false;

@@ -113,6 +113,15 @@
               <label for="objetivo" class="form-label">Objetivo</label>
               <input type="text" class="form-control" name="objetivo" id="objetivo" value="<?= $curso->objetivo ?>">
             </div>
+            <div class="mb-3">
+                            <legend for="visibilidad" class="form-label">Visibilidad:</legend>
+                            <select class="form-control" id="visibilidad" name="visibilidad" required>
+                                <option value="1" <?php if($curso->visibilidad==1) echo("selected");?>>Visible para todos</option>
+                                <option value="2"<?php if($curso->visibilidad==2) echo("selected");?>>Solo docentes y administrativos</option>
+                                <option value="3"<?php if($curso->visibilidad==3) echo("selected");?>>Solo docentes</option>
+                                <option value="4"<?php if($curso->visibilidad==4) echo("selected");?>>Solo administrativos</option>
+                            </select>
+                        </div>
 
             <label>Ilustración del curso</label>
             <input type="text" class="form-control mb-3" name="ilustracion" placeholder="Ingresa la URL de tu imagen" value="<?= $curso->ilustracion ?>">

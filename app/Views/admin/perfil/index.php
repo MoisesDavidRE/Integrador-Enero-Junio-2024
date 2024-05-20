@@ -1,4 +1,4 @@
-<?= $this->extend('template/mainAdministrativo'); ?>
+<?= $this->extend('template/main'); ?>
 <?= $this->section('content'); ?>
 <!DOCTYPE html>
 <html lang="es">

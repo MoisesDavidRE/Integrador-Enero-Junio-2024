@@ -56,7 +56,7 @@
                         </div>
 
                         <legend>Descripción</legend>
-                        <textarea name="descripcion" class="form-control mb-3" aria-label="With textarea" style="height: 100px;" placeholder="Ingresa descripcioo del curso" required></textarea>
+                        <textarea name="descripcion" class="form-control mb-3" aria-label="With textarea" style="height: 136px;" placeholder="Ingresa descripcioo del curso" required></textarea>
 
                         <div class="mb-3">
                             <legend for="estatus" class="form-label">Estatus</legend>
@@ -91,6 +91,15 @@
                         <div class="mb-3">
                             <legend for="objetivo" class="form-label">Objetivo</legend>
                             <input type="text" class="form-control" name="objetivo" id="objetivo" placeholder="Ingresa el objetivo del curso" required>
+                        </div>
+                        <div class="mb-3">
+                            <legend for="visibilidad" class="form-label">Visibilidad:</legend>
+                            <select class="form-control" id="visibilidad" name="visibilidad" required>
+                                <option value="1">Visible para todos</option>
+                                <option value="2">Solo docentes y administrativos</option>
+                                <option value="3">Solo docentes</option>
+                                <option value="4">Solo administrativos</option>
+                            </select>
                         </div>
 
                         <legend>Ilustración del curso</legend>

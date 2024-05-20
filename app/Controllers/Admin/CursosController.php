@@ -126,7 +126,8 @@ class CursosController extends BaseController
             "duracion" => $_POST['duracion'],
             "estatus" => $_POST['estatus'],
             "ilustracion" => $_POST['ilustracion'],
-            "idCategoria" => 3
+            "idCategoria" => $_POST['idCategoria'],
+            "visibilidad" => $_POST['visibilidad']
         ];
 
         $cursosInicioModel->insert($data, true);
@@ -175,7 +176,8 @@ class CursosController extends BaseController
             "fechaFin" => $_POST['fechaFin'],
             "objetivo" => $_POST['objetivo'],
             "ilustracion" => $_POST['ilustracion'],
-            "idCategoria" => $_POST['idCategoria']
+            "idCategoria" => $_POST['idCategoria'],
+            "visibilidad" => $_POST['visibilidad']
         ];
 
         $cursosInicioModel->update($_POST['idCurso'],$data);
