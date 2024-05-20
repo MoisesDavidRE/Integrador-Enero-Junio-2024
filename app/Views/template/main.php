@@ -107,9 +107,6 @@
                     </a>
                 </div>
                 <ul class="sidebar-nav">
-                    <li class="sidebar-header">
-                        Principal
-                    </li>
                     <li class="sidebar-item">
                         <a href="<?= base_url('admin/cursos') ?>" class="sidebar-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
