@@ -14,7 +14,7 @@ class CursosController extends BaseController
     public function cursosInicio()
     {
         $model = model('CursosInicioModel');
-        $data['cursos']=$model->findAll();
+        $data['cursos']=$model->where('visibilidad',1)->orWhere('visibilidad',2)->orWhere('visibilidad',3)->findAll();
         return view('docente/cursos/cursosInicio',$data);
     }
 
