@@ -32,7 +32,7 @@
 
     <?php foreach ($cursos as $curso) : ?>
       <div class="card" style="width: 20rem;position:relative;margin-right: 10px;">
-        <center> <img style="padding-top:10px;padding-right:5px" src="<?= $curso->ilustracion?>" alt=" <?= $curso->ilustracion?>" width="300" height="170"><br></center>
+        <center> <img style="padding-top:10px;padding-right:5px" src="<?= $curso->ilustracion ?>" alt=" <?= $curso->ilustracion ?>" width="300" height="170"><br></center>
         <div class="card-body">
           <h4 style="color:rgb(0,92,171);">Curso:</h4>
           <p><?= $curso->nombre ?></p>
@@ -53,9 +53,21 @@
 
               <p>
               <div style="padding-top: 10px;">
-                <a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
-                <a href="<?= base_url('estudiante/cursos/inscribirse/' . $curso->idCurso); ?>" class="btn btn-danger">Inscribirse</a>
-                
+                <?php
+                $db = \Config\Database::connect();
+                $idUsuario = session()->get('id');
+                $query = "SELECT * FROM curso_usuario WHERE idUsuario=$idUsuario and idCurso=$curso->idCurso";
+                $resultado = $db->query($query)->getResultArray();
+                if ($resultado) :
+                ?>
+                  <a class="btn btn-success" disabled>Estás inscrito</a>
+                <?php else : ?>
+                  <form action="<?= base_url('estudiante/cursos/inscribirse/' . $curso->idCurso); ?>" method="POST">
+                    <?= csrf_field() ?>
+                    <input type="submit" class="btn" style="color:white;background-color: rgb(0,92,171);" value="Inscribirse">
+                    <a href="<?= base_url('estudiante/perfil') ?>" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
+                  </form>
+                <?php endif ?>
               </div>
               </p>
             </div>

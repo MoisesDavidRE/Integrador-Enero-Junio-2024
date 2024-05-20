@@ -5,6 +5,7 @@ namespace App\Controllers\Estudiante;
 use App\Controllers\BaseController;
 use App\Models\ContenidoModel;
 use App\Models\CursosInicioModel;
+use App\Models\CursoUsuarioModel;
 use App\Models\SubtemaModel;
 use App\Models\TemaModel;
 use CodeIgniter\RESTful\ResourceController;
@@ -13,9 +14,14 @@ class CursosController extends BaseController
 {
     public function cursosInicio()
     {
+        $cursoUsuarioModel = new CursoUsuarioModel();
+        $cursosUsuario = $cursoUsuarioModel->where('idUsuario', session()->get('id'))->findAll();
         $model = model('CursosInicioModel');
-        $data['cursos'] = $model->where('visibilidad',1)->findAll();
-        return view('estudiante/cursos/cursosInicio',$data);
+        $data = [
+            'cursos' => $model->where('visibilidad', 1)->findAll(),
+            'cursosUsuario' => $cursosUsuario
+        ];
+        return view('estudiante/cursos/cursosInicio', $data);
     }
 
     public function agregar()
@@ -25,19 +31,19 @@ class CursosController extends BaseController
         $categoriasModel = model('CategoriaModel');
         $instructores = $usersModel->where('id', session()->get('id'))->findAll();
         $infoUsuario = $infoModel->findAll();
-    
+
         $data = [
             'categorias' => $categoriasModel->findAll(),
             'instructores' => $instructores,
             'infoUsuario' => $infoUsuario
         ];
-    
+
         $validation = \Config\Services::validation();
-    
+
         if (strtolower($this->request->getMethod()) === 'get') {
             return view('docente/cursos/agregar', $data);
         }
-    
+
         $rules = [
             'instructor' => [
                 'rules' => 'required|is_not_unique[users.id]',
@@ -80,7 +86,7 @@ class CursosController extends BaseController
                 'errors' => [
                     'required' => 'La fecha de finalización es obligatoria.',
                     'valid_date' => 'La fecha de finalización no es válida.',
-                    
+
                 ]
             ],
             'objetivo' => [
@@ -99,7 +105,7 @@ class CursosController extends BaseController
                 ]
             ]
         ];
-    
+
         if (!$this->validate($rules)) {
             $data['validation'] = $validation;
             return view('template/main')
@@ -111,7 +117,7 @@ class CursosController extends BaseController
             }
         }
     }
-    
+
     public function insert()
     {
         $cursosInicioModel = model('CursosInicioModel');
@@ -146,22 +152,23 @@ class CursosController extends BaseController
         $infoModel = model('InfoModel');
         $categoriasModel = model('CategoriaModel');
         $temaModel = new TemaModel();
-        $temas = $temaModel->where('idCurso',$idCurso)->findAll();
-        $instructores = $usersModel->where('perfil',3)->orWhere('perfil',4)->findAll();
+        $temas = $temaModel->where('idCurso', $idCurso)->findAll();
+        $instructores = $usersModel->where('perfil', 3)->orWhere('perfil', 4)->findAll();
         $infoUsuario = $infoModel->findAll();
         $cursosInicioModel = model('CursosInicioModel');
-        
-        $data=[
+
+        $data = [
             'categorias' => $categoriasModel->findAll(),
             'instructores' => $instructores,
             'infoUsuario' => $infoUsuario,
-            'temas'=> $temas,
+            'temas' => $temas,
             'curso' => $cursosInicioModel->find($idCurso)
         ];
         return view('estudiante/cursos/editar', $data);
     }
 
-    public function update (){
+    public function update()
+    {
 
         $cursosInicioModel = model('CursosInicioModel');
 
@@ -178,15 +185,16 @@ class CursosController extends BaseController
             "idCategoria" => $_POST['idCategoria']
         ];
 
-        $cursosInicioModel->update($_POST['idCurso'],$data);
+        $cursosInicioModel->update($_POST['idCurso'], $data);
         return redirect('estudiante/cursos');
-    } 
+    }
 
-    public function nuevoTema($idCurso){
-        $data=[
-            'curso'=>$idCurso
+    public function nuevoTema($idCurso)
+    {
+        $data = [
+            'curso' => $idCurso
         ];
-        return view('estudiante/cursos/agregarTema',$data);
+        return view('estudiante/cursos/agregarTema', $data);
     }
 
     public function insertarTema()
@@ -203,38 +211,40 @@ class CursosController extends BaseController
         $infoModel = model('InfoModel');
         $categoriasModel = model('CategoriaModel');
         $temaModel = new TemaModel();
-        $temas = $temaModel->where('idCurso',$_POST['idCurso'])->findAll();
-        $instructores = $usersModel->where('perfil',3)->orWhere('perfil',4)->findAll();
+        $temas = $temaModel->where('idCurso', $_POST['idCurso'])->findAll();
+        $instructores = $usersModel->where('perfil', 3)->orWhere('perfil', 4)->findAll();
         $infoUsuario = $infoModel->findAll();
         $cursosInicioModel = model('CursosInicioModel');
-        
-        $dataC=[
+
+        $dataC = [
             'categorias' => $categoriasModel->findAll(),
             'instructores' => $instructores,
             'infoUsuario' => $infoUsuario,
-            'temas'=> $temas,
+            'temas' => $temas,
             'curso' => $cursosInicioModel->find($_POST['idCurso'])
         ];
-        return view('estudiante/cursos/editar',$dataC);
+        return view('estudiante/cursos/editar', $dataC);
     }
 
-    public function mostrarTema ($idTema) {
+    public function mostrarTema($idTema)
+    {
         $temasModel = new TemaModel();
         $subtemaModel = new SubtemaModel();
         $tema = $temasModel->find($idTema);
 
         $data = [
-            'tema'=> $tema,
-            'subtemas' => $subtemaModel->where('idTema',$idTema)->findAll()
+            'tema' => $tema,
+            'subtemas' => $subtemaModel->where('idTema', $idTema)->findAll()
         ];
-        return view('estudiante/cursos/mostrarTema',$data);
+        return view('estudiante/cursos/mostrarTema', $data);
     }
 
-    public function nuevoSubtema($idTema){
-        $data=[
-            'tema'=>$idTema
+    public function nuevoSubtema($idTema)
+    {
+        $data = [
+            'tema' => $idTema
         ];
-        return view('estudiante/cursos/agregarSubtema',$data);
+        return view('estudiante/cursos/agregarSubtema', $data);
     }
 
     public function insertarSubtema()
@@ -247,31 +257,44 @@ class CursosController extends BaseController
             "descripcion" => $_POST['descripcion']
         ];
         $subtemaModel->insert($data, true);
-        
-        $dataS=[ 
+
+        $dataS = [
             'tema' => $temaModel->find($_POST['idTema']),
-            'subtemas' => $subtemaModel->where('idTema',$_POST['idTema'])->findAll()
+            'subtemas' => $subtemaModel->where('idTema', $_POST['idTema'])->findAll()
         ];
-        return view('estudiante/cursos/mostrarTema',$dataS);
+        return view('estudiante/cursos/mostrarTema', $dataS);
     }
 
-    public function mostrarSubtema ($idSubtema) {
+    public function mostrarSubtema($idSubtema)
+    {
         $subtemasModel = new SubtemaModel();
         $subtema = $subtemasModel->find($idSubtema);
         $data = [
             'subtema' => $subtema,
         ];
-        return view('estudiante/cursos/mostrarSubtema',$data);
+        return view('estudiante/cursos/mostrarSubtema', $data);
     }
 
-    public function mostrarContenido ($idSubtema) {
+    public function mostrarContenido($idSubtema)
+    {
         $subtemasModel = new SubtemaModel();
-        $subtema = $subtemasModel->where('idSubtema',$idSubtema);
+        $subtema = $subtemasModel->where('idSubtema', $idSubtema);
 
         $data = [
             'subtema' => $subtema
         ];
-        return view('estudiante/cursos/mostrarContenido',$data);
+        return view('estudiante/cursos/mostrarContenido', $data);
     }
-    
+
+    public function inscribirse($idCurso)
+    {
+        $cursoUsuarioModel = new CursoUsuarioModel();
+        $data = [
+            'idCurso' => $idCurso,
+            'idUsuario' => session()->get('id')
+        ];
+
+        $cursoUsuarioModel->insert($data, true);
+        return redirect('estudiante/misCursos');
+    }
 }

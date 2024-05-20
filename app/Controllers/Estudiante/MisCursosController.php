@@ -5,6 +5,7 @@ namespace App\Controllers\Estudiante;
 use App\Controllers\BaseController;
 use App\Models\SubtemaModel;
 use App\Models\ContenidoModel;
+use App\Models\CursoUsuarioModel;
 
 class MisCursosController extends BaseController
 {
@@ -18,43 +19,11 @@ class MisCursosController extends BaseController
         return view ('estudiante/misCursos/index');
     }
 
-    public function subtema1()
-    {
-        $subtemaModel = new SubtemaModel();
-        $subtemaData = $subtemaModel->where('idSubtema', 1)->first();
-        $contenidoModel = new ContenidoModel();
-        $contenidoData = $contenidoModel->where('idContenido', $subtemaData->idContenido)->first();
+    public function misCursos(){
+        $cursoUsuarioModel = new CursoUsuarioModel();
         $data = [
-            'subtemaData' => $subtemaData,
-            'contenidoData' => $contenidoData
+            'cursos' => $cursoUsuarioModel->where('idUsuario',session()->get('id'))->findAll()
         ];
-
-        return view('estudiante/misCursos/subtema1', $data);
-    }
-    public function subtema2()
-    {
-        $subtemaModel = new SubtemaModel();
-        $subtemaData = $subtemaModel->where('idSubtema', 2)->first();
-        $contenidoModel = new ContenidoModel();
-        $contenidoData = $contenidoModel->where('idContenido', $subtemaData->idContenido)->first();
-        $data = [
-            'subtemaData' => $subtemaData,
-            'contenidoData' => $contenidoData
-        ];
-    
-        return view('estudiante/misCursos/subtema2', $data);
-    }
-    
-    public function subtema3()
-    {
-        return view ('estudiante/misCursos/subtema3');
-    }
-    public function subtema4()
-    {
-        return view ('estudiante/misCursos/subtema4');
-    }
-    public function evaluacion()
-    {
-        return view ('estudiante/misCursos/evaluacion');
+        return view ('estudiante/misCursos/index',$data);
     }
 }

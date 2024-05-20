@@ -5,6 +5,7 @@ namespace App\Controllers\AdministrativoSG;
 use App\Controllers\BaseController;
 use App\Models\ContenidoModel;
 use App\Models\CursosInicioModel;
+use App\Models\CursoUsuarioModel;
 use App\Models\SubtemaModel;
 use App\Models\TemaModel;
 use CodeIgniter\RESTful\ResourceController;
@@ -15,6 +16,7 @@ class CursosController extends BaseController
     {
         $model = model('CursosInicioModel');
         $data['cursos']=$model->where('visibilidad',1)->orWhere('visibilidad',2)->orWhere('visibilidad',4)->findAll();
+        $data['cursosPropios']=$model->where('instructor',session()->get('id'))->findAll();
         return view('administrativoSG/cursos/cursosInicio',$data);
     }
 
@@ -272,6 +274,17 @@ class CursosController extends BaseController
             'subtema' => $subtema
         ];
         return view('administrativoSG/cursos/mostrarContenido',$data);
+    }
+    public function inscribirse($idCurso)
+    {
+        $cursoUsuarioModel = new CursoUsuarioModel();
+        $data = [
+            'idCurso' => $idCurso,
+            'idUsuario' => session()->get('id')
+        ];
+
+        $cursoUsuarioModel->insert($data, true);
+        return redirect('administrativo/misCursos');
     }
     
 }

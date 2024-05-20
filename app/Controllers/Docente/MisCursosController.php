@@ -3,6 +3,7 @@
 namespace App\Controllers\Docente;
 
 use App\Controllers\BaseController;
+use App\Models\CursoUsuarioModel;
 
 class MisCursosController extends BaseController
 {
@@ -14,5 +15,13 @@ class MisCursosController extends BaseController
             return redirect('/');
         }
         return view ('docente/misCursos/index');
+    }
+
+    public function misCursos(){
+        $cursoUsuarioModel = new CursoUsuarioModel();
+        $data = [
+            'cursos' => $cursoUsuarioModel->where('idUsuario',session()->get('id'))->findAll()
+        ];
+        return view ('docente/misCursos/index',$data);
     }
 }
