@@ -92,8 +92,8 @@
 
 <h1>Lista de alumnos</h1>
 
-<form action="<?= base_url('admin/usuarios/buscar') ?>" method="GET" class="search-form">
-    <input type="text" name="q" placeholder="Buscar..." class="search-input">
+<form action="<?= base_url('admin/usuarios/alumnos') ?>" method="POST" class="search-form">
+    <input type="text" name="search" placeholder="Buscar..." class="search-input">
     <button type="submit" class="search-button">Buscar</button>
 </form>
 

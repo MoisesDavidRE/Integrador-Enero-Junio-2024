@@ -77,16 +77,6 @@
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control <?= session('errors.telefono') ? 'is-invalid' : '' ?>" id="floatingTelefono" placeholder="Teléfono" name="telefono" value="<?= old('telefono') ?>" required>
-                                    <label for="floatingTelefono">Teléfono</label>
-                                    <?php if (session('errors.telefono')): ?>
-                                        <div class="invalid-feedback">
-                                            <?= session('errors.telefono') ?>
-                                        </div>
-                                    <?php endif; ?>
-                                </div>
-
-                                <div class="form-floating mb-3">
                                     <input type="password" class="form-control <?= session('errors.password') ? 'is-invalid' : '' ?>" id="floatingPassword" placeholder="Contraseña" name="password" required>
                                     <label for="floatingPassword">Contraseña</label>
                                     <?php if (session('errors.password')): ?>

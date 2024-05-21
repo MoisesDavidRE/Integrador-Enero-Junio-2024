@@ -13,9 +13,9 @@
 
 <div class="col-10" style="position:relative;left:128px">
   <div class="card text-center">
-    <form class="d-flex" role="Buscador">
-      <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-      <button type="button" class="btn btn-outline-primary">Buscar</button>
+    <form class="d-flex" role="Buscador" action="<?= base_url('admin/cursos'); ?>" method="POST">
+      <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar" name="search">
+      <button type="submit" class="btn btn-outline-primary">Buscar</button>
     </form>
   </div>
 </div>
@@ -66,6 +66,5 @@
     <?php endforeach ?>
   </div>
 </div>
-
 
 <?= $this->endSection(); ?>

@@ -67,6 +67,11 @@
 <body>
     <h3><span><?= $infoUsuario->nombre . " " . $infoUsuario->apellidoPaterno . " " . $infoUsuario->apellidoMaterno ?></span>
     </h3>
+
+    <form action="<?php echo base_url('admin/perfil'); ?>" method="get">
+        <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit"><i class="fas fa-arrow-left"></i></button>
+    </form>
+
     <div class="tabla">
         <h1>Detalles del usuario</h1>
         <form action="<?= base_url('admin/perfil/actualizar')?>" method="POST">
@@ -115,7 +120,7 @@
                 <label for="telefono">Teléfono:</label>
                 <input class="form-control" type="text" id="telefono" name="telefono" value="<?= $infoUsuario->telefono?>"required>
             </div>
-            <button type="submit" class="edit-button">Guardar cambios</button>
+            <button type="submit" class="edit-button" style="color:white;background-color: rgb(0,92,171)" >Guardar cambios</button>
         </form>
     </div>
     <div class="cursos">

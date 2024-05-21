@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\ResetPassModel;
 use App\Models\UsuarioModel;
 
 class RegistroController extends BaseController
@@ -41,16 +42,6 @@ class RegistroController extends BaseController
                     'is_unique' => 'El {field} ya está registrado.'
                 ]
             ],
-            'telefono' => [
-                'label' => 'Teléfono',
-                'rules' => 'required|numeric|min_length[10]|max_length[15]',
-                'errors' => [
-                    'required' => 'El {field} es obligatorio.',
-                    'numeric' => 'El {field} debe contener solo números.',
-                    'min_length' => 'El {field} debe tener al menos {param} dígitos.',
-                    'max_length' => 'El {field} no puede tener más de {param} dígitos.'
-                ]
-            ],
             'password' => [
                 'label' => 'Contraseña',
                 'rules' => 'required|min_length[8]|max_length[30]',
@@ -67,14 +58,12 @@ class RegistroController extends BaseController
         }
 
         $data = [
-            'perfil' => 1,
+            'perfil' => 2,
             'identificador' => $this->request->getVar('identificador'),
             'email' => $this->request->getVar('email'),
-            'telefono' => $this->request->getVar('telefono'),
             'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
             'status' => 1,
         ];
-
         $this->usuarioModel->insert($data);
 
         return redirect()->to('/login');

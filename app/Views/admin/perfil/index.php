@@ -84,7 +84,7 @@
     </div>
 
     <a href="<?= base_url('admin/perfil/editar/'). session('id') ?>">
-      <button class="edit-button">Editar información</button>
+    <button class="edit-button" style="color:white;background-color: rgb(0,92,171)">Editar información</button>
     </a>
   </div>
   <div class="cursos">

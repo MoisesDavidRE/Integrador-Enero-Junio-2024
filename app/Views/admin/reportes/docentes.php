@@ -92,7 +92,7 @@
 
 <div class="button-container-top">
     <button class="btn btn-outline-primary menu-desplegable" id="filtroMenu">Filtros</button>
-    <a href="<?= base_url('admin/reportes/generarPDFDocentes'); ?>" class="btn btn-primary">Descargar PDF <i class="fa-solid fa-file-pdf" style="color: white;"></i></a>
+    <a href="<?= base_url('admin/reportes/generarPDFDocentes'); ?>" class="btn btn-danger">Descargar PDF <i class="fa-solid fa-file-pdf" style="color: white;"></i></a>
 </div>
 
 <div class="contenedor-menu">

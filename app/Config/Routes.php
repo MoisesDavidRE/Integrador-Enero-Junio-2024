@@ -1,3 +1,4 @@
+
 <?php
 
 use CodeIgniter\Router\RouteCollection;
@@ -43,6 +44,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 
 	// CURSOS------------------------------------------------------------------------------------------------
 	$routes->get('cursos','Admin\CursosController::cursosInicio');
+	$routes->post('cursos','Admin\CursosController::cursosInicio');
 	$routes->get('cursos/agregar','Admin\CursosController::agregar'); 
 	$routes->post('cursos/insertar', 'Admin\CursosController::insert');
 	$routes->get('cursos/delete/(:num)', 'Admin\CursosController::delete/$1');
@@ -90,6 +92,10 @@ $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 	$routes->get('misCursos', 'Estudiante\MisCursosController::misCursos');
 	$routes->get('misCursos/evaluacion', 'Estudiante\MisCursosController::evaluacion');
 
+	$routes->get('verCurso/(:num)', 'Estudiante\MisCursosController::verCurso/$1');
+	$routes->get('tema/(:num)', 'Estudiante\MisCursosController::verCurso/$1');
+	$routes->get('verTema/(:num)', 'Estudiante\MisCursosController::verTema/$1');
+	$routes->get('misCursos/subtema/(:num)', 'Estudiante\MisCursosController::verSubtema/$1');
 
 	// PERFIL------------------------------------------------------------------------------------------------
 	$routes->get('perfil', 'Estudiante\PerfilController::index');
@@ -153,14 +159,21 @@ $routes->group('docente', ['filter' => 'auth'], function ($routes) {
 	$routes->post('cursos/inscribirse/(:num)', 'Docente\CursosController::inscribirse/$1');
 
 	// MIS CURSOS------------------------------------------------------------------------------------------------
-	$routes->resource('misCursos', ['controller' => 'Docente\MisCursosController::misCursos']);
-
+	$routes->get('misCursos', 'Docente\MisCursosController::misCursos');
+	$routes->get('verCurso/(:num)', 'Docente\MisCursosController::verCurso/$1');
+	$routes->get('tema/(:num)', 'Docente\MisCursosController::verCurso/$1');
+	$routes->get('verTema/(:num)', 'Docente\MisCursosController::verTema/$1');
+	$routes->get('misCursos/subtema/(:num)', 'Docente\MisCursosController::verSubtema/$1');
 	// PERFIL------------------------------------------------------------------------------------------------
 	$routes->get('perfil', 'Docente\PerfilController::index');
 	$routes->get('perfil/editar/(:num)', 'Docente\PerfilController::editar/$1');
 	$routes->post('perfil/actualizar', 'Docente\PerfilController::actualizar');});
 
 $routes->get('logout', 'UserController::logout');
+$routes->get('resetPass', 'UserController::resetPass');
+$routes->post('resetPass/usr', 'UserController::pregunta');
+$routes->post('resetPass/answer', 'UserController::respuesta');
+$routes->post('resetPass/update', 'UserController::updatePass');
 
 // 1-admin
 // 2-estudiante

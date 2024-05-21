@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\UsuarioModel;
 use App\Models\InfoModel;
+use App\Models\ResetPassModel;
 
 class UserController extends BaseController
 {
@@ -73,7 +74,7 @@ class UserController extends BaseController
         $usuario = model('UsuarioModel');
         $basicUserInfo = $usuario->where('id', $id)->first();
     
-        return view('admin/usuarios/completarInfo', [
+        return view('pages/completarInfo', [
             'id' => $id,
             'basicUserInfo' => $basicUserInfo,
         ]);
@@ -103,6 +104,17 @@ class UserController extends BaseController
         'telefono' => $this->request->getPost('telefono'),
         'sede' => $this->request->getPost('sede')
     ];
+
+
+    $dataR = [
+        'pregunta' => $this->request->getVar('pregunta'),
+        'respuesta' => password_hash($this->request->getVar('respuesta'), PASSWORD_DEFAULT),
+        'idUsuario' => $this->request->getVar('id_Usuario'),
+        'identificador' => $this->request->getVar('identificador')
+    ];
+    $resetPass = new ResetPassModel();
+    $resetPass->insert($dataR, true);
+
     $infoUsuario->insert($data);
     return redirect()->to('login');
 }
@@ -144,6 +156,41 @@ public function prueba(){
     {
         session()->destroy();
         return redirect()->to('login');
+    }
+
+    public function resetPass(){
+        return view('pages/resetPass');
+    }
+    public function pregunta(){
+        $resetPassModel = new ResetPassModel();
+        $usr = $resetPassModel->where('identificador',$_POST['identificador'])->findAll();
+        $data = [
+            'reset' => $usr
+        ];
+        return view('pages/question',$data);
+    }
+    public function respuesta (){
+        $model = new ResetPassModel();
+        $resetPass = $model->where('identificador', $_POST['identificador'])->first();
+        if (!$resetPass) {
+            return false;
+        }
+        if(password_verify($_POST['respuesta'], $resetPass->respuesta)){
+            $usrModel = new UsuarioModel();
+            $data = [
+                'usuario' => $usrModel->where('identificador',$_POST['identificador'])->findAll()
+            ];
+            return view('pages/renovarPass',$data);
+        }
+    }
+
+    public function updatePass (){
+        $usrModel =  new UsuarioModel();
+        $data = [
+            'password' => password_hash($this->request->getVar('nuevaContra'), PASSWORD_DEFAULT)
+        ];
+        $usrModel->update($_POST['idUsuario'],$data);
+        return redirect('/');
     }
 }
 

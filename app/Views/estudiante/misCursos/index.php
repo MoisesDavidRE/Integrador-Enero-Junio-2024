@@ -61,8 +61,7 @@ foreach ($cursos as $index) {
                         <div>
                             <p>
                             <div style="padding-top: 10px;">
-                                <a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
-                            </div>
+                            <a href="<?= base_url('estudiante/verCurso/' . $curso[0]['idCurso']) ?>" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>                            </div>
                             </p>
                         </div>
                     </tbody>

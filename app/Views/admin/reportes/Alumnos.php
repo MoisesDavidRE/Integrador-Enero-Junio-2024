@@ -91,7 +91,7 @@
 
 <div class="button-container-top">
 <button class="btn btn-outline-primary menu-desplegable" id="filtroMenu">Filtros</button>
-<a href="<?= base_url('admin/reportes/generarPDF'); ?>" class="btn btn-primary">Descargar PDF <i class="fa-solid fa-file-pdf" style="color: white;"></i> </a> <!-- Ajuste aquí para cambiar el color del icono -->
+<a href="<?= base_url('admin/reportes/generarPDF'); ?>" class="btn btn-danger">Descargar PDF <i class="fa-solid fa-file-pdf" style="color: white;"></i> </a> <!-- Ajuste aquí para cambiar el color del icono -->
 </div>
 
 <!-- Controles de filtro -->

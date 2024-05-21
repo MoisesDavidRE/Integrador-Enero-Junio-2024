@@ -88,11 +88,14 @@
                                     <a href="<?php echo base_url('registro'); ?>">Registrarse</a>
                                 </div>
 
+                                <div class="mt-3" style="display:flex; align-items:center; justify-content: center;">
+                                    <a href="<?php echo base_url('resetPass'); ?>">Olvidé mi contraseña</a>
+                                </div>
+
                             </div>
                         </div>
                         </center>
                     </div>
-                    
                 </div>
             </div>
         </div>

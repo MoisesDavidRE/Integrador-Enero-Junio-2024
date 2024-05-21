@@ -25,7 +25,7 @@
           <div class="col-md-6">
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre del curso</label>
-              <input type="text" class="form-control" name="nombre" id="nombre" value="<?= $curso->nombre ?>">
+              <input type="text" class="form-control" name="nombre" id="nombre" value="<?= $curso->nombre ?>" required>
             </div>
 
             <div class="mb-3">
@@ -64,7 +64,7 @@
             </div>
 
             <label>Descripción</label>
-            <textarea name="descripcion" class="form-control mb-3" aria-label="With textarea" style="height: 100px;"><?= $curso->descripcion ?></textarea>
+            <textarea name="descripcion" class="form-control mb-3" aria-label="With textarea" style="height: 100px;" required><?= $curso->descripcion ?></textarea>
 
             <div class="mb-3">
               <label for="estatus" class="form-label">Estatus</label>
@@ -102,29 +102,29 @@
 
             <div class="mb-3">
               <label for="fechaInicio" class="form-label">Fecha de Inicio</label>
-              <input type="date" class="form-control" name="fechaInicio" id="fechaInicio" value="<?= $curso->fechaInicio ?>">
+              <input type="date" class="form-control" name="fechaInicio" id="fechaInicio" value="<?= $curso->fechaInicio ?>" required>
             </div>
             <div class="mb-3">
               <label for="fechaFin" class="form-label">Fecha de Finalización</label>
-              <input type="date" class="form-control" name="fechaFin" id="fechaFin" value="<?= $curso->fechaFin ?>">
+              <input type="date" class="form-control" name="fechaFin" id="fechaFin" value="<?= $curso->fechaFin ?>" required>
             </div>
 
             <div class="mb-3">
               <label for="objetivo" class="form-label">Objetivo</label>
-              <input type="text" class="form-control" name="objetivo" id="objetivo" value="<?= $curso->objetivo ?>">
+              <input type="text" class="form-control" name="objetivo" id="objetivo" value="<?= $curso->objetivo ?>" required>
             </div>
             <div class="mb-3">
-                            <legend for="visibilidad" class="form-label">Visibilidad:</legend>
-                            <select class="form-control" id="visibilidad" name="visibilidad" required>
-                                <option value="1" <?php if($curso->visibilidad==1) echo("selected");?>>Visible para todos</option>
-                                <option value="2"<?php if($curso->visibilidad==2) echo("selected");?>>Solo docentes y administrativos</option>
-                                <option value="3"<?php if($curso->visibilidad==3) echo("selected");?>>Solo docentes</option>
-                                <option value="4"<?php if($curso->visibilidad==4) echo("selected");?>>Solo administrativos</option>
-                            </select>
-                        </div>
+              <legend for="visibilidad" class="form-label">Visibilidad:</legend>
+              <select class="form-control" id="visibilidad" name="visibilidad" required>
+                <option value="1" <?php if ($curso->visibilidad == 1) echo ("selected"); ?>>Visible para todos</option>
+                <option value="2" <?php if ($curso->visibilidad == 2) echo ("selected"); ?>>Solo docentes y administrativos</option>
+                <option value="3" <?php if ($curso->visibilidad == 3) echo ("selected"); ?>>Solo docentes</option>
+                <option value="4" <?php if ($curso->visibilidad == 4) echo ("selected"); ?>>Solo administrativos</option>
+              </select>
+            </div>
 
             <label>Ilustración del curso</label>
-            <input type="text" class="form-control mb-3" name="ilustracion" placeholder="Ingresa la URL de tu imagen" value="<?= $curso->ilustracion ?>">
+            <input type="text" class="form-control mb-3" name="ilustracion" placeholder="Ingresa la URL de tu imagen" value="<?= $curso->ilustracion ?>" required>
           </div>
         </div>
 
@@ -133,37 +133,50 @@
 
       <form action="<?php echo base_url('admin/cursos/nuevoTema/' . $curso->idCurso); ?>" method="get">
         <button class="btn" style="color:white;background-color: rgb(0,92,171);" type="submit">Agregar un nuevo
-          tema +</i></button>
-      </form>
+          tema +</i></button><br>
+      </form><br>
 
-      <h5>Temas asignados al curso:</h5>
+      <h5>Temas asignados al curso:</h5><br>
 
 
-      <div class="contenedor-botones">
-        <?php foreach ($temas as $tema) : ?>
+      <?php foreach ($temas as $tema) : ?>
+        <div class="tooltip-container">
+          <div class="tooltip">
+            <div class="profile">
+              <div class="user">
+                <div class="img">UI</div>
+                <div class="details">
+                  <div class="name"><?= $tema->nombre ?></div>
+                  <div class="description"><?= $tema->descripcion ?></div>
 
-          <div class="tooltip-container">
-            <div class="tooltip">
-              <div class="profile">
-                <div class="user">
-                  <div class="img">UI</div>
-                  <div class="details">
-                    <div class="name"><?= $tema->nombre ?></div>
-                    <div class="username">@username</div>
-
-                  </div>
                 </div>
-                <div class="about">500+ Connections</div>
               </div>
-            </div>
-            <div class="text">
-              <form action="<?php echo base_url('admin/cursos/mostrarTema/' . $tema->idTema); ?>" method="get">
-                <button class="boton" type="submit"><?= $tema->nombre ?></button>
-              </form>
+              <div class="about"><?= $curso->duracion ?></div>
             </div>
           </div>
-        <?php endforeach; ?>
-      </div>
+
+          <ol class="list-group list">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+
+                <form action="<?php echo base_url('admin/cursos/mostrarTema/' . $tema->idTema); ?>" method="get">
+                  <button class="btn btn-dark" type="submit"><?= $tema->nombre ?></button><br>
+                  <?= $curso->duracion ?>
+                </form>
+              </div>
+              
+              <div style="padding-top: 10px;">
+                <a href="<?= base_url('admin/cursos/deleteTema/' . $curso->idCurso); ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                <a href="<?= base_url('admin/cursos/editar/' . $curso->idCurso); ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square <i class=" fa-regular fa-pen-to-square" style="color: #ffffff;"></i></a>
+              </div>
+              
+            </li>
+          </ol>
+
+        </div>
+      <?php endforeach; ?>
+
+
     </div>
     <div class="col-3"></div>
   </div>

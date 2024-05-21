@@ -7,13 +7,12 @@ use App\Models\UsuarioModel;
 
 class UsuarioController extends ResourceController
 {
-    private $usuario;
-    private $perfil;
+   
 
     public function __construct()
     {
         helper(['form', 'url', 'session']);
-        $this->session = \Config\Services::session();
+        $session = \Config\Services::session();
         $this->usuario = new UsuarioModel();
     }
 
@@ -21,8 +20,13 @@ class UsuarioController extends ResourceController
     public function index()
     {
         $usersModel = model('UsersModel');
+        if(isset($_POST['search'])){
+            $search = $_POST['search'];
+            $usuarios = $usersModel->like('email',$search)->orLike('identificador',$search)->findAll(); 
+              
+        }else{
         $usuarios = $usersModel->where('perfil', 2)->findAll(); 
-    
+        }
         $InfoModel = model('InfoModel');
         $informacion = []; 
     
@@ -202,7 +206,7 @@ class UsuarioController extends ResourceController
         $telefono = $this->request->getPost('telefono');
         $sede = $this->request->getPost('sede');
         $email = $this->request->getPost('email');
-        $password = $this->request->getPost('password');
+        $password = $_POST['password'];
         $status = $this->request->getPost('status');
     
         // Cargar los modelos
@@ -229,11 +233,11 @@ class UsuarioController extends ResourceController
             ];
             $infoModel->insert($infoData);
     
-            $this->session->setFlashdata('success_message', 'Usuario agregado correctamente.');
+            session()->setFlashdata('success_message', 'Usuario agregado correctamente.');
     
             return redirect()->to(base_url('admin/usuarios/alumnos'));
         } else {
-            $this->session->setFlashdata('error_message', 'No se pudo agregar el usuario.');
+            session()->setFlashdata('error_message', 'No se pudo agregar el usuario.');
     
             return redirect()->to(base_url('admin/usuarios/personal'));
         }
@@ -412,7 +416,7 @@ public function insertPersonal()
     $telefono = $this->request->getPost('telefono');
     $sede = $this->request->getPost('sede');
     $email = $this->request->getPost('email');
-    $password = $this->request->getPost('password');
+    $password = $_POST['password'];
     $status = $this->request->getPost('status');
 
     $usersModel = model('UsersModel');
@@ -438,11 +442,11 @@ public function insertPersonal()
         ];
         $infoModel->insert($infoData);
 
-        $this->session->setFlashdata('success_message', 'Usuario agregado correctamente.');
+        session()->setFlashdata('success_message', 'Usuario agregado correctamente.');
 
         return redirect()->to(base_url('admin/usuarios/personal'));
     } else {
-        $this->session->setFlashdata('error_message', 'No se pudo agregar el usuario.');
+        session()->setFlashdata('error_message', 'No se pudo agregar el usuario.');
 
         return redirect()->to(base_url('admin/usuarios/alumnos'));
     }
