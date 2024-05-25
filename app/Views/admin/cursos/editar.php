@@ -144,14 +144,17 @@
           <div class="tooltip">
             <div class="profile">
               <div class="user">
-                <div class="img">UI</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Logo_Upn_Oficial.svg/706px-Logo_Upn_Oficial.svg.png" wheight="50" height="50" alt="">
                 <div class="details">
                   <div class="name"><?= $tema->nombre ?></div>
                   <div class="description"><?= $tema->descripcion ?></div>
 
                 </div>
               </div>
-              <div class="about"><?= $curso->duracion ?></div>
+              <div class="about"><?php
+                      $duracionEnSemanas = substr($curso->duracion, 0, -1);
+                      $plural = ($duracionEnSemanas == 1) ? "semana" : "semanas";
+                      echo $duracionEnSemanas . " " . $plural; ?></div>
             </div>
           </div>
 
@@ -161,13 +164,16 @@
 
                 <form action="<?php echo base_url('admin/cursos/mostrarTema/' . $tema->idTema); ?>" method="get">
                   <button class="btn btn-dark" type="submit"><?= $tema->nombre ?></button><br>
-                  <?= $curso->duracion ?>
+                  <?php
+                      $duracionEnSemanas = substr($curso->duracion, 0, -1);
+                      $plural = ($duracionEnSemanas == 1) ? "semana" : "semanas";
+                      echo $duracionEnSemanas . " " . $plural; ?>
                 </form>
               </div>
               
               <div style="padding-top: 10px;">
-                <a href="<?= base_url('admin/cursos/deleteTema/' . $curso->idCurso); ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
-                <a href="<?= base_url('admin/cursos/editar/' . $curso->idCurso); ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square <i class=" fa-regular fa-pen-to-square" style="color: #ffffff;"></i></a>
+                <a href="<?= base_url('admin/cursos/deleteTema/' . $tema->idTema); ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                
               </div>
               
             </li>

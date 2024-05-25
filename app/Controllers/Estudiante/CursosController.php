@@ -17,10 +17,15 @@ class CursosController extends BaseController
         $cursoUsuarioModel = new CursoUsuarioModel();
         $cursosUsuario = $cursoUsuarioModel->where('idUsuario', session()->get('id'))->findAll();
         $model = model('CursosInicioModel');
-        $data = [
-            'cursos' => $model->where('visibilidad', 1)->findAll(),
-            'cursosUsuario' => $cursosUsuario
-        ];
+        if (isset($_POST['search'])) {
+            $search = $_POST['search'];
+            $data['cursos'] = $model->where('visibilidad',1)->like('nombre','%'.$search.'%')->findAll();
+        } else {
+            $data['cursos'] = $model->where('visibilidad', 1)->findAll();
+        }
+        $data [
+            'cursosUsuario'
+        ]= $cursosUsuario;
         return view('estudiante/cursos/cursosInicio', $data);
     }
 

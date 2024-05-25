@@ -52,8 +52,8 @@
 
 <h1>Lista del personal</h1>
 
-<form action="tu_url_de_busqueda" method="GET" class="search-form">
-    <input type="text" name="q" placeholder="Buscar..." class="search-input">
+<form action="<?= base_url('admin/usuarios/personal') ?>" method="POST" class="search-form">
+    <input type="text" name="search" placeholder="Buscar..." class="search-input">
     <button type="submit" class="search-button">Buscar</button>
 </form>
 

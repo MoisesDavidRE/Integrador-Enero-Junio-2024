@@ -13,6 +13,11 @@ class CursosController extends BaseController
 {
     public function cursosInicio()
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $model = model('CursosInicioModel');
         if (isset($_POST['search'])) {
             $search = $_POST['search'];
@@ -26,6 +31,11 @@ class CursosController extends BaseController
 
     public function agregar()
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $usersModel = model('UsersModel');
         $infoModel = model('InfoModel');
         $categoriasModel = model('CategoriaModel');
@@ -120,6 +130,11 @@ class CursosController extends BaseController
 
     public function insert()
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $cursosInicioModel = model('CursosInicioModel');
 
         $data = [
@@ -142,14 +157,35 @@ class CursosController extends BaseController
 
     public function delete($idCurso)
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $cursosInicioModel = model('CursosInicioModel');
         $cursosInicioModel->delete($idCurso);
+        return redirect('admin/cursos');
+    }
+    public function deleteTema($idTema)
+    {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
+        $temaModel = new TemaModel();
+        $temaModel->delete($idTema);
         return redirect('admin/cursos');
     }
 
 
     public function editar($idCurso)
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $usersModel = model('UsersModel');
         $infoModel = model('InfoModel');
         $categoriasModel = model('CategoriaModel');
@@ -195,6 +231,11 @@ class CursosController extends BaseController
     public function update()
     {
 
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $cursosInicioModel = model('CursosInicioModel');
 
 
@@ -238,6 +279,11 @@ class CursosController extends BaseController
 
     public function nuevoTema($idCurso)
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $data = [
             'curso' => $idCurso
         ];
@@ -246,6 +292,11 @@ class CursosController extends BaseController
 
     public function insertarTema()
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $temaModel = new TemaModel();
         $data = [
             "nombre" => $_POST['nombre'],
@@ -275,6 +326,11 @@ class CursosController extends BaseController
 
     public function mostrarTema($idTema)
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $temasModel = new TemaModel();
         $subtemaModel = new SubtemaModel();
         $tema = $temasModel->find($idTema);
@@ -288,6 +344,11 @@ class CursosController extends BaseController
 
     public function nuevoSubtema($idTema)
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $data = [
             'tema' => $idTema
         ];
@@ -296,6 +357,11 @@ class CursosController extends BaseController
 
     public function insertarSubtema()
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $subtemaModel = new SubtemaModel();
         $temaModel = new TemaModel();
         $data = [
@@ -314,6 +380,11 @@ class CursosController extends BaseController
 
     public function mostrarSubtema($idSubtema)
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $subtemasModel = new SubtemaModel();
         $subtema = $subtemasModel->find($idSubtema);
         $data = [
@@ -324,6 +395,11 @@ class CursosController extends BaseController
 
     public function mostrarContenido($idSubtema)
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $subtemasModel = new SubtemaModel();
         $subtema = $subtemasModel->where('idSubtema', $idSubtema);
 

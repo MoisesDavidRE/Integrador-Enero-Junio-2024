@@ -18,23 +18,10 @@ use CodeIgniter\Config\Routing as BaseRouting;
  */
 class Routing extends BaseRouting
 {
-    /**
-     * An array of files that contain route definitions.
-     * Route files are read in order, with the first match
-     * found taking precedence.
-     *
-     * Default: APPPATH . 'Config/Routes.php'
-     */
     public array $routeFiles = [
         APPPATH . 'Config/Routes.php',
     ];
 
-    /**
-     * The default namespace to use for Controllers when no other
-     * namespace has been specified.
-     *
-     * Default: 'App\Controllers'
-     */
     public string $defaultNamespace = 'App\Controllers';
 
     /**

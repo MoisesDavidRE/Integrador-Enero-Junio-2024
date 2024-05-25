@@ -14,6 +14,11 @@ class ReportesController extends BaseController
 
     public function __construct()
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $this->usuario = model('UsersModel');
         $this->infoModel = model('InfoModel');
     }

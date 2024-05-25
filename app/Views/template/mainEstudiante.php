@@ -172,6 +172,8 @@
                 </div>
             </main>
             <a href="#" class="theme-toggle" style="position:absolute;border-bottom:10px">
+            <i class="fa-regular fa-sun"></i>
+
             </a>
         </div>
     </div>

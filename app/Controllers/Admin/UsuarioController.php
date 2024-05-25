@@ -19,10 +19,15 @@ class UsuarioController extends ResourceController
 
     public function index()
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $usersModel = model('UsersModel');
         if(isset($_POST['search'])){
             $search = $_POST['search'];
-            $usuarios = $usersModel->like('email',$search)->orLike('identificador',$search)->findAll(); 
+            $usuarios = $usersModel->like('email',"%".$search."%")->orLike('identificador',"%".$search."%")->findAll(); 
               
         }else{
         $usuarios = $usersModel->where('perfil', 2)->findAll(); 
@@ -37,7 +42,7 @@ class UsuarioController extends ResourceController
             $infoUsuario = $InfoModel->where('id_Usuario', $usuario->id)->findAll();
             $informacion[$usuario->id] = $infoUsuario;
         }
-    
+        
         $data = [
             'usuarios' => $usuarios,
             'informacion' => $informacion,
@@ -49,8 +54,19 @@ class UsuarioController extends ResourceController
     
     public function personal()
     {
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
         $usersModel = model('UsersModel');
-        $usuarios = $usersModel->whereIn('perfil', [1, 3, 4])->findAll(); 
+        if(isset($_POST['search'])){
+            $search = $_POST['search'];
+            $usuarios = $usersModel->like('email',"%".$search."%")->orLike('identificador',"%".$search."%")->orLike('perfil',"%".$search."%")->findAll(); 
+              
+        }else{
+            $usuarios = $usersModel->whereIn('perfil', [1, 3, 4])->findAll(); 
+        }
 
         $InfoModel = model('InfoModel');
         $informacion = []; 

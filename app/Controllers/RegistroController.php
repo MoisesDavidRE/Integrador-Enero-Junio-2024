@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\ResetPassModel;
 use App\Models\UsuarioModel;
 
 class RegistroController extends BaseController
@@ -64,8 +63,12 @@ class RegistroController extends BaseController
             'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
             'status' => 1,
         ];
+
         $this->usuarioModel->insert($data);
 
-        return redirect()->to('/login');
+        $session = session();
+        $session->setFlashdata('success', 'Registro completado con éxito');
+        
+        return redirect()->to('registro');
     }
 }

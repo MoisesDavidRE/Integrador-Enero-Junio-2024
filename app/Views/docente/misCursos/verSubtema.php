@@ -32,33 +32,15 @@
     .img {
         display: block; /* Para que el margen automático funcione */
         margin: 20px auto; /* Margen automático para centrar horizontalmente */
+        width: 300px;
+        height: 100px;
     }
 
-    .progress-container {
-        width: 100%; /* Ancho completo */
-        text-align: center;
-        margin-top: 30px; /* Margen superior */
-    }
 
-    progress {
-        width: 70%; /* Ancho de la barra de progreso */
-        height: 20px; /* Altura de la barra de progreso */
-    }
 
 </style>
-<div class="progress-container">
-    <h2>Progreso</h2>
-    <progress value="10" max="80"></progress> <!-- Cambia el valor "30" según tu progreso -->
-</div>
-<div class="text-center mb-4">
-<div class="btn-group" role="group" aria-label="Botones de acción">
-        <a href="<?= base_url('estudiante/misCursos') ?>" class="btn btn-primary">Introducción</a>
-        <a href="<?= base_url('estudiante/misCursos/subtema1') ?>" class="btn btn-primary">Subtema 1</a>
-        <a href="<?= base_url('estudiante/misCursos/subtema2') ?>" class="btn btn-primary">Subtema 2</a>
-        <a href="<?= base_url('estudiante/misCursos/subtema3') ?>" class="btn btn-primary">Subtema 3</a>
-        <a href="<?= base_url('estudiante/misCursos/subtema4') ?>" class="btn btn-primary">Subtema 4</a>
-        <a href="<?= base_url('estudiante/misCursos/evaluacion') ?>" class="btn btn-primary">Evaluación</a>
- </div>
+
+
 </div>
 <h1><?= esc($subtema->nombre) ?></h1>
 <div class="container">
@@ -68,6 +50,7 @@
                 <p><?= esc($subtema->descripcion) ?></p>
                 <img class="img" src="<?= esc($subtema->ilustracion) ?>" alt="<?= esc($subtema->nombre) ?>">
             </div>
+
         </div>
     </div>
 </div>

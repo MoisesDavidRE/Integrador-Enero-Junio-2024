@@ -12,12 +12,12 @@
 <h1 align="center">Mis Cursos</h1>
 
 <div class="col-10" style="position:relative;left:128px">
-    <div class="card text-center">
-        <form class="d-flex" role="Buscador">
-            <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-            <button type="button" class="btn btn-outline-primary">Buscar</button>
-        </form>
-    </div>
+  <div class="card text-center">
+    <form class="d-flex" role="Buscador" action="<?= base_url('estudiante/misCursos'); ?>" method="POST">
+      <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar" name="search">
+      <button type="submit" class="btn btn-outline-primary">Buscar</button>
+    </form>
+  </div>
 </div>
 
 <div style="padding-bottom: 25px; padding-top: 10px;position:relative;left:128px">

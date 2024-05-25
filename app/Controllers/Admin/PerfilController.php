@@ -64,6 +64,11 @@ class PerfilController extends BaseController
         //     $session->destroy();
         //     return redirect('/');
         // }
+        $session = session();
+        if ($session->get('isLoggedIn') != TRUE || $session->get('perfil') != '1') {
+            $session->destroy();
+            return redirect('/');
+        }
 
         $usersModel = model('UsersModel');
         $infoModel = model('InfoModel');

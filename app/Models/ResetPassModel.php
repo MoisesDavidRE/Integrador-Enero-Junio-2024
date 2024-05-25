@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class ResetPassModel extends Model
 {
-    protected $table            = 'resetPass';
+    protected $table            = 'resetpass';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';

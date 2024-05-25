@@ -61,6 +61,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 	$routes->get('cursos/mostrarSubtema/(:num)','Admin\CursosController::mostrarSubtema/$1');
 	$routes->post('cursos/insertarSubtema','Admin\CursosController::insertarSubtema');
 	$routes->get('cursos/contenido/(:num)','Admin\CursosController::mostrarContenido/$1');
+	$routes->get('cursos/deleteTema/(:num)', 'Admin\CursosController::deleteTema/$1');
 
 	// PERFIL------------------------------------------------------------------------------------------------
 	$routes->get('perfil', 'Admin\PerfilController::index');
@@ -86,6 +87,7 @@ $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 
 	// CURSOS------------------------------------------------------------------------------------------------
 	$routes->get('cursos', 'Estudiante\CursosController::cursosInicio');
+	$routes->post('cursos', 'Estudiante\CursosController::cursosInicio');
 	$routes->post('cursos/inscribirse/(:num)', 'Estudiante\CursosController::inscribirse/$1');
 
 	// MIS CURSOS------------------------------------------------------------------------------------------------
@@ -129,7 +131,10 @@ $routes->group('administrativo', ['filter' => 'auth'], function ($routes) {
 
 	// MIS CURSOS------------------------------------------------------------------------------------------------
 	$routes->get('misCursos','AdministrativoSG\MisCursosController::misCursos');
-
+	$routes->get('verCurso/(:num)', 'Docente\MisCursosController::verCurso/$1');
+	$routes->get('tema/(:num)', 'Docente\MisCursosController::verCurso/$1');
+	$routes->get('verTema/(:num)', 'Docente\MisCursosController::verTema/$1');
+	$routes->get('misCursos/subtema/(:num)', 'Docente\MisCursosController::verSubtema/$1');
 	// PERFIL------------------------------------------------------------------------------------------------
 	$routes->get('perfil', 'AdministrativoSG\PerfilController::index');
 	$routes->get('perfil/editar/(:num)', 'AdministrativoSG\PerfilController::editar/$1');

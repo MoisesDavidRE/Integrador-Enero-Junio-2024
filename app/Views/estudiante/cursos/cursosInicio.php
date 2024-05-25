@@ -13,9 +13,9 @@
 
 <div class="col-10" style="position:relative;left:128px">
   <div class="card text-center">
-    <form class="d-flex" role="Buscador">
-      <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-      <button type="button" class="btn btn-outline-primary">Buscar</button>
+    <form class="d-flex" role="Buscador" action="<?= base_url('estudiante/cursos'); ?>" method="POST">
+      <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar" name="search">
+      <button type="submit" class="btn btn-outline-primary">Buscar</button>
     </form>
   </div>
 </div>
@@ -65,7 +65,7 @@
                   <form action="<?= base_url('estudiante/cursos/inscribirse/' . $curso->idCurso); ?>" method="POST">
                     <?= csrf_field() ?>
                     <input type="submit" class="btn" style="color:white;background-color: rgb(0,92,171);" value="Inscribirse">
-                    <a href="<?= base_url('estudiante/perfil') ?>" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
+                    
                   </form>
                 <?php endif ?>
               </div>
